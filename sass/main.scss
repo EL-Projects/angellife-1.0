@@ -1,6 +1,30 @@
+// Base
 @import "./base/common";
 @import "./base/container";
+@import "./base/section";
 
-@import "./base/dropdown";
-@import "./base/mobile-menu";
-@import "./base/header";
+// Components
+@import "./components/dropdown";
+@import "./components/mobile-menu";
+
+// Layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// General page
+@import "./layout/pages/general/general";
+
+// // Save-life
+// @import "./layout/save-life";
+
+// // Sisters
+// @import "./layout/sisters";
+
+// // Volountrers
+// @import "./layout/volounters";
+
+// // News
+// @import "./layout/news";
+
+// // Utils
+// @import "./utils/variables";

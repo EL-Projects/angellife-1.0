@@ -244,6 +244,7 @@ body {
   font-size: 8px;
   line-height: 1.87;
   text-align: center;
+  direction: ltr;
 }
 
 .header-donate-button {
@@ -429,7 +430,7 @@ body {
   font-size: 20px;
   text-align: center;
   justify-content: center;
-  margin-bottom: 190px;
+  margin-bottom: 20px;
   color: #fff;
 }
 

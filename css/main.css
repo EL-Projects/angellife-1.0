@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -249,6 +250,8 @@ body {
   min-width: 100px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
+  font-family: Involve;
+  font-weight: 600;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -278,10 +281,20 @@ body {
 }
 
 .header-call-button-text {
-  font-family: inherit;
+  font-family: Involve;
   font-weight: 700;
   font-size: 5px;
   line-height: 1.87;
+}
+
+.mobile-menu-link {
+  font-family: Involve;
+}
+
+.header-main-text {
+  font-family: Involve;
+  font-style: italic;
+  font-weight: 1000px;
 }
 
 @media screen and (min-width: 768px) {
@@ -403,9 +416,29 @@ body {
   position: absolute;
   margin-top: -250px;
   margin-left: 30px;
+  font-family: Involve;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
   justify-content: center;
 }
 
 .donate-button {
   display: none;
+}
+
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: Involve;
+  src: url("../../fonts/Involve-Medium.ttf");
+}
+@font-face {
+  font-weight: 600; /* Соответствует значению semi-bold */
+  font-family: Involve;
+  src: url("../../fonts/Involve-SemiBold.ttf");
+}
+@font-face {
+  font-weight: 700; /* Соответствует значению bold */
+  font-family: Involve;
+  src: url("../../fonts/Involve-Bold.ttf");
 }/*# sourceMappingURL=main.css.map */

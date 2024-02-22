@@ -195,13 +195,15 @@ body {
   justify-content: space-between;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 350px;
+  background-position: center;
+  min-height: 220px;
 }
 
 .mobile-menu-open-btn {
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: auto;
+  margin-right: -10px;
   align-items: center;
   background-color: transparent;
   border: none;
@@ -245,6 +247,7 @@ body {
 }
 
 .header-donate-button {
+  display: none;
   border-radius: 5px;
   height: 25px;
   min-width: 100px;
@@ -253,7 +256,6 @@ body {
   font-family: Involve;
   font-weight: 600;
   font-size: 14px;
-  display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -267,6 +269,7 @@ body {
 
 .header-main-text {
   font-size: 18px;
+  margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 5px;
   text-align: center;
@@ -294,7 +297,13 @@ body {
 .header-main-text {
   font-family: Involve;
   font-style: italic;
-  font-weight: 1000px;
+  font-weight: 1000;
+}
+
+.header,
+.main {
+  background-image: url(../../images/main-new.jpg);
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -413,20 +422,44 @@ body {
 }
 .general-main-title {
   display: flex;
-  position: absolute;
-  margin-top: -250px;
-  margin-left: 30px;
+  margin-top: -50px;
+  margin-bottom: 30px;
   font-family: Involve;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   justify-content: center;
+  margin-bottom: 190px;
+  color: #fff;
 }
 
 .donate-button {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header,
+  .main {
+    background-size: fill;
+    min-height: 852px;
+    background-position: center;
+  }
+  .general-main-title {
+    margin-top: auto;
+  }
+  .general-main-title {
+    display: flex;
+    margin-top: -700px;
+    margin-left: 30px;
+    font-family: Involve;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 690px;
+    color: #fff;
+  }
+}
 @font-face {
   font-weight: 400; /* Соответствует значению normal */
   font-family: Involve;

@@ -14,7 +14,8 @@
   //   background-image: url(../../images/main1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 350px;
+  background-position: center;
+  min-height: 220px;
 }
 
 .header-logo {
@@ -24,6 +25,7 @@
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: auto;
+  margin-right: -10px;
   align-items: center;
   background-color: transparent;
   border: none;
@@ -71,6 +73,7 @@
 }
 
 .header-donate-button {
+  display: none;
   //   margin-top: 5px;
   border-radius: 5px;
   height: 25px;
@@ -82,7 +85,7 @@
   //   font-size: 12px;
   //   line-height: 1.87;
   font-size: 14px;
-  display: flex;
+  // display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -96,6 +99,7 @@
 
 .header-main-text {
   font-size: 18px;
+  margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 5px;
   text-align: center;
@@ -123,7 +127,12 @@
 .header-main-text {
   font-family: Involve;
   font-style: italic;
-  font-weight: 1000px;
+  font-weight: 1000;
+}
+.header,
+.main {
+  background-image: url(../../images/main-new.jpg);
+  background-size: cover;
 }
 
 // for tablet and desktop

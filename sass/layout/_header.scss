@@ -151,7 +151,14 @@
     display: flex;
     direction: ltl;
   }
-
+  .nav-item {
+    color: #ffffff;
+    margin-right: 30px;
+  }
+  .header-list {
+    justify-content: center;
+    margin-top: 10px;
+  }
   .header-contact-list {
     display: block;
   }
@@ -160,31 +167,31 @@
     justify-content: flex-start;
   }
 
-  .header-contact__icon-mail {
-    display: block;
-    margin-right: 10px;
-    fill: currentColor;
-  }
+  // .header-contact__icon-mail {
+  //   display: block;
+  //   margin-right: 10px;
+  //   fill: currentColor;
+  // }
 
-  .header-contact__icon-tel {
-    display: block;
-    margin-right: 10px;
-    fill: currentColor;
-  }
+  // .header-contact__icon-tel {
+  //   display: block;
+  //   margin-right: 10px;
+  //   fill: currentColor;
+  // }
 
-  .header-contact__link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-  }
+  // .header-contact__link {
+  //   display: flex;
+  //   align-items: center;
+  //   font-weight: 500;
+  //   font-size: 12px;
+  //   line-height: 14px;
+  //   letter-spacing: 0.02em;
+  //   color: var(--text-color);
+  // }
 
-  .header-nav__item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // .header-nav__item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
   .header-nav__link {
     position: relative;
     font-family: var(--main-font-family);

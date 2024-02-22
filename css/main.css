@@ -69,8 +69,11 @@ body {
 .dropdown-btn {
   border-style: none;
   border-radius: 0;
-  font-size: 20px;
-  background-color: #2267a7;
+  font-size: 16px;
+  background-color: transparent;
+  margin-top: -2px;
+  margin-right: 10px;
+  margin-left: -10px;
 }
 
 .dropdown {
@@ -82,7 +85,7 @@ body {
   display: none;
   position: absolute;
   overflow: auto;
-  background-color: #2267a7;
+  background-color: whitesmoke;
   border-radius: 5px;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
@@ -321,34 +324,20 @@ body {
     display: flex;
     direction: ltl;
   }
+  .nav-item {
+    color: #ffffff;
+    margin-right: 30px;
+  }
+  .header-list {
+    justify-content: center;
+    margin-top: 10px;
+  }
   .header-contact-list {
     display: block;
   }
   .header-contact__item {
     display: flex;
     justify-content: flex-start;
-  }
-  .header-contact__icon-mail {
-    display: block;
-    margin-right: 10px;
-    fill: currentColor;
-  }
-  .header-contact__icon-tel {
-    display: block;
-    margin-right: 10px;
-    fill: currentColor;
-  }
-  .header-contact__link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-  }
-  .header-nav__item:not(:last-child) {
-    margin-right: 50px;
   }
   .header-nav__link {
     position: relative;

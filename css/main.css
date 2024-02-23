@@ -304,10 +304,10 @@ body {
   font-weight: 1000;
 }
 
-.header,
-.main {
-  background-image: url(../../images/main-new.jpg);
+.header {
+  background-image: url(./../images/main-new.jpg);
   background-size: cover;
+  background-position: top;
 }
 
 @media screen and (min-width: 768px) {
@@ -428,11 +428,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .header,
-  .main {
-    background-size: fill;
-    min-height: 852px;
+  .header {
+    background-size: cover;
     background-position: center;
+    min-height: 800px;
   }
   .general-main-title {
     margin-top: auto;

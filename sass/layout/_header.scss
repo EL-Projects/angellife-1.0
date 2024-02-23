@@ -130,14 +130,20 @@
   font-style: italic;
   font-weight: 1000;
 }
-.header,
-.main {
-  background-image: url(./../images/main-new.jpg);
+.header {
+  background-image: url(../../images/main-new.jpg);
   background-size: cover;
+  background-position: top;
 }
 
 // for tablet and desktop
 @media screen and (min-width: 768px) {
+  .header {
+    background-size: cover;
+    // min-height: 852px;
+    background-position: center;
+    min-height: 800px;
+  }
   .narrow {
     direction: rtl;
   }

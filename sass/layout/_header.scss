@@ -133,7 +133,7 @@
 .header {
   background-image: url(../../images/main-new.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
 // for tablet and desktop
@@ -221,9 +221,9 @@
     }
   }
 
-  .header-logo {
-    padding: 26px 0;
-  }
+  // .header-logo {
+  //   padding: 26px 0;
+  // }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contact__item:not(:last-child) {

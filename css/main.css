@@ -305,12 +305,17 @@ body {
 }
 
 .header {
-  background-image: url(./../images/main-new.jpg);
+  background-image: url(../../images/main-new.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+  }
   .narrow {
     direction: rtl;
   }
@@ -358,9 +363,6 @@ body {
   }
   .header-nav__link.current {
     color: var(--accent-color);
-  }
-  .header-logo {
-    padding: 26px 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -428,11 +430,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    background-size: cover;
-    background-position: center;
-    min-height: 800px;
-  }
   .general-main-title {
     margin-top: auto;
   }

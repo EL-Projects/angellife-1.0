@@ -10,7 +10,7 @@
 .header {
   //   border-bottom: solid 1px #ececec;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   //   background-image: url(../../images/main1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -146,6 +146,10 @@
 
 // for tablet and desktop
 @media screen and (min-width: 768px) {
+  .nav-link {
+    text-align: center;
+    color: #fff;
+  }
   .header {
     background-size: cover;
     // min-height: 852px;
@@ -163,11 +167,14 @@
   }
   .header-nav {
     display: flex;
-    direction: ltl;
+    direction: ltr;
+    white-space: nowrap;
   }
   .nav-item {
     color: #ffffff;
-    margin-right: 30px;
+    margin-right: 20px;
+    font-size: 16px;
+    text-align: center;
   }
   .header-list {
     justify-content: center;
@@ -179,6 +186,17 @@
   .header-contact__item {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .dropdown-btn {
+    border-style: none;
+    border-radius: 0;
+    font-size: 16px;
+    background-color: transparent;
+    margin-top: -2px;
+    margin-right: 10px;
+    margin-left: -10px;
+    color: #fff;
   }
 
   // .header-contact__icon-mail {
@@ -219,6 +237,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
     padding-bottom: 32px;
+    white-space: nowrap;
 
     &:hover,
     &:focus {

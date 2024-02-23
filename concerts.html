@@ -11,13 +11,127 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="header">
+      <div class="header container">
         <!-- Logo and text -->
         <div class="header-logo">
-          <a href="./index.html">Logo</a>
-          <p>Подаруй дитині життя</p>
+          <a class="link" href="./index.html"
+            ><img src="./images/logo.png" alt="" width="55px" height="55px"
+          /></a>
         </div>
+        <p class="header-main-text">Подаруй дитині життя</p>
+        <!-- Header button -->
+        <div class="narrow">
+          <div class="header-button">
+            <button type="button" class="header-call-button btn">
+              <a class="header-call-button-link link" href="tel:+380985530990"
+                >+380-98-55-30-990</a
+              >
+            </button>
+
+            <p class="header-call-button-text">
+              Гаряча лінія пидтримки майбутніх мам
+            </p>
+            <button class="header-donate-button btn" type="button">
+              Допомогти
+            </button>
+          </div>
+
+          <button type="button" class="mobile-menu-open-btn" data-menu-open>
+            <svg class="mobile-menu-open-btn__icon" width="25px" height="25px">
+              <use href="./images/icons.svg#menu_burger_icon"></use>
+            </svg>
+          </button>
+
+          <!-- Header navigation -->
+          <nav class="header-nav">
+            <ul class="header-list list">
+              <li>
+                <a class="nav-item link" class="current" href="./index.html"
+                  >Головна</a
+                >
+              </li>
+              <li>
+                <a class="nav-item link" href="./save-life.html"
+                  >Подаруй дитині <br життя
+                /></a>
+              </li>
+              <li class="nav-item link dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Про нас</a>
+                <div class="dropdown-content">
+                  <a class="nav-item-no-margin link" href="./sisters.html"
+                    >Сестринство милосердя</a
+                  >
+                  <a class="nav-item-no-margin link" href="./volounters.html"
+                    >Волонтери</a
+                  >
+                </div>
+              </li>
+
+              <li><a class="nav-item link" href="./news.html">Новини</a></li>
+              <li><a class="nav-item link" href="">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#mobile-icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link current" href="./index.html"
+                >Головна</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./save-life.html"
+                >Подаруй дитині життя</a
+              >
+            </li>
+
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./sisters.html"
+                >Сестринство милосердя</a
+              >
+            </li>
+
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./volounters.html"
+                >Волонтери</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./news.html">Новини</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-contacts-list list">
+            <li class="mobile-menu-contacts__item">
+              <a
+                class="mobile-menu-contacts__link-tel link"
+                href="tel:+380985530990"
+                >+380-98-55-30-990</a
+              >
+            </li>
+            <li class="mobile-menu-contacts__item">
+              <a
+                class="mobile-menu-contacts__link-mail link"
+                href="mailto:angellife.kyiv@gmail.com"
+              >
+                angellife.kyiv@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

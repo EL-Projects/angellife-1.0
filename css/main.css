@@ -306,8 +306,10 @@ body {
 
 .header {
   background-image: url(../../images/main-new.jpg);
+  background-image: url(./../images/main-new.jpg);
   background-size: cover;
   background-position: center;
+  height: 40vh;
 }
 
 @media screen and (min-width: 768px) {

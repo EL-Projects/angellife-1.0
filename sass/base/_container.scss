@@ -1,7 +1,7 @@
 .container {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .current {
@@ -9,13 +9,13 @@
   // background-color: #007991;
 }
 
-// @media screen and (min-width: 768px) {
-//   .container {
-//     width: 100%;
-//     padding-right: 20px;
-//     padding-left: 20px;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 
 // .headernav {
 //   background-color: #2267a7;

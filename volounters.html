@@ -17,10 +17,19 @@
         <!-- Logo and text -->
         <div class="header-logo">
           <a class="link" href="./index.html"
-            ><img src="./images/logo.png" alt="" width="55px" height="55px"
+            ><img
+              class="header-logo-img"
+              src="./images/logo.png"
+              alt=""
+              width="55px"
+              height="55px"
           /></a>
+          <p class="header-main-text">
+            Подаруй дитині <br />
+            життя
+          </p>
         </div>
-        <p class="header-main-text">Подаруй дитині життя</p>
+
         <!-- Header button -->
         <div class="narrow">
           <div class="header-button">
@@ -47,34 +56,33 @@
           <!-- Header navigation -->
           <nav class="header-nav">
             <ul class="header-list list">
-              <li>
-                <a class="nav-item link" class="current" href="./index.html"
-                  >Головна</a
+              <li class="nav-item">
+                <a class="nav-link link current" href="./index.html">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="./save-life.html"
+                  >Подаруй дитині<br />
+                  життя</a
                 >
               </li>
-              <li>
-                <a class="nav-item link" href="./save-life.html"
-                  >Подаруй дитині життя</a
-                >
-              </li>
-              <li>
-                <div class="dropdown">
-                  <button class="dropdown-btn btn">Про нас</button>
-                  <div class="dropdown-options">
-                    <a class="nav-item-no-margin link" href="./sisters.html"
-                      >Сестринство милосердя</a
-                    >
-                    <a
-                      class="nav-item-no-margin link current"
-                      href="./volounters.html"
-                      >Волонтери</a
-                    >
-                    <!-- <a href="./concerts.html">Лекції, концерти</a> -->
-                  </div>
+              <li class="nav-item link dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Про нас</a>
+                <div class="dropdown-content">
+                  <a class="nav-item-no-margin link" href="./sisters.html"
+                    >Сестринство милосердя</a
+                  >
+                  <a class="nav-item-no-margin link" href="./volounters.html"
+                    >Волонтери</a
+                  >
                 </div>
               </li>
-              <li><a class="nav-item link" href="./news.html">Новини</a></li>
-              <li><a class="nav-item link" href="">Контакти</a></li>
+
+              <li class="nav-item">
+                <a class="nav-item link" href="./news.html">Новини</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item link" href="">Контакти</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -88,7 +96,9 @@
           </button>
           <ul class="mobile-menu-list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./index.html">Головна</a>
+              <a class="mobile-menu__link link current" href="./index.html"
+                >Головна</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="./save-life.html"
@@ -103,7 +113,7 @@
             </li>
 
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link current" href="./volounters.html"
+              <a class="mobile-menu__link link" href="./volounters.html"
                 >Волонтери</a
               >
             </li>
@@ -135,11 +145,15 @@
         </div>
       </div>
     </header>
-    <!-- Main volounters -->
+
+    <!-- Main -->
     <section class="section">
-      <div class="container"><h1>Волонтери</h1></div>
-      <div>
-        <button type="button">Приєднатись</button>
+      <div class="general-main container">
+        <h1 class="general-main-title">
+          Дитина - <br />
+          майбутнє нашої країни.
+        </h1>
+        <button class="main-donate-button btn" type="button">Допомогти</button>
       </div>
     </section>
     <!-- Hero volounters -->

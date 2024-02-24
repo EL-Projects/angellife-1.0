@@ -1,22 +1,64 @@
+// .container {
+//   width: 100%;
+//   padding-right: 10px;
+//   padding-left: 10px;
+// }
+
+// .current {
+//   color: #2196f3;
+//   // background-color: #007991;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .container {
+//     width: 100%;
+//     padding-right: 20px;
+//     padding-left: 20px;
+//     // max-width: 767px;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .container {
+//     padding-left: 40px;
+//     padding-right: 40px;
+//   }
+// }
+
 .container {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-}
+  padding-right: 15px;
+  padding-left: 15px;
 
-.current {
-  color: #2196f3;
-  // background-color: #007991;
-}
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin: 0 auto;
+  }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
+.header {
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .general-main {
+//     padding-top: 130px;
+//     padding-bottom: 100px;
+//     max-width: 1199px;
+//   }
+// }
 // .headernav {
 //   background-color: #2267a7;
 //   height: 50px;

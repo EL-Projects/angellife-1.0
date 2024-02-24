@@ -61,21 +61,37 @@ p {
 
 .container {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-
-.current {
-  color: #2196f3;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
+  .header {
+    width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .dropdown {
     display: inline-block;
@@ -230,6 +246,7 @@ p {
 }
 
 .header {
+  width: 100%;
   z-index: 1;
   position: fixed;
   display: flex;
@@ -303,9 +320,11 @@ p {
   font-size: 18px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px;
   margin-bottom: 5px;
   text-align: center;
+  font-family: inherit;
+  color: #ffffff;
+  text-shadow: #493340 1px 0 0px, #493340 0 1px 0px, #493340 -1px 0 0px, #493340 0 -1px 0px;
 }
 
 .header-logo {
@@ -476,6 +495,11 @@ p {
     width: 100%;
     max-width: 70px;
   }
+  .header-main-text {
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 40px;
+  }
   .nav-link {
     text-align: center;
     color: #fff;
@@ -613,7 +637,11 @@ p {
   background-image: url(./../images/main-new.jpg);
   background-size: cover;
   background-position: center;
-  height: 40vh;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .general-main-title {
@@ -670,9 +698,16 @@ p {
   display: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .general-main {
+    padding-top: 130px;
+    padding-bottom: 100px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .general-main {
-    height: 80vh;
+    padding-top: 300px;
+    padding-bottom: 75px;
   }
   .general-main-title {
     margin-top: auto;
@@ -688,4 +723,12 @@ p {
     justify-content: center;
     color: #fff;
   }
+}
+.current {
+  color: #493340;
+}
+
+.current-dropdown {
+  color: #fff;
+  background-color: #493340;
 }/*# sourceMappingURL=main.css.map */

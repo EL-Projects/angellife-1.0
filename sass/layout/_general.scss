@@ -24,6 +24,43 @@
   color: #fff;
 }
 
+.general-main-text {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  color: #493340;
+  margin-bottom: 10px;
+}
+.general-main-text-bold {
+  font-weight: 700;
+}
+
+.general-hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.general-hero-text {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  color: #493340;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.general-hero-extra-subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #493340;
+  text-align: center;
+}
+
+.general-help-subtitle {
+  font-size: 20px;
+  ont-weight: 700;
+  color: #493340;
+  text-align: center;
+}
+
 .main-donate-button {
   // position: relative;
   min-width: 100px;
@@ -69,6 +106,11 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-donate-button {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
   .general-main {
     min-height: 450px;
   }
@@ -78,6 +120,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .main-donate-button {
+    font-weight: 700;
+    font-size: 20px;
+  }
   .general-main {
     min-height: 800px;
   }

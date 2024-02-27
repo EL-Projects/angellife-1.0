@@ -1,5 +1,9 @@
 .current {
   color: #fff;
+  &:hover,
+  &:focus {
+    color: #493340;
+  }
 }
 .current-dropdown {
   color: #fff;

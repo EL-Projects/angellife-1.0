@@ -144,6 +144,9 @@ p {
     padding: 14px 16px;
     text-decoration: none;
   }
+  .dropbtn:hover, .dropbtn:focus {
+    color: #fff;
+  }
 }
 .mobile-menu {
   position: fixed;
@@ -468,31 +471,9 @@ p {
     margin-left: -10px;
     color: #fff;
   }
-  .header-nav__link {
-    position: relative;
-    font-family: var(--main-font-family);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    white-space: nowrap;
-  }
-  .header-nav__link:hover, .header-nav__link:focus {
-    color: var(--accent-color);
-  }
-  .header-nav__link.current {
-    color: var(--accent-color);
-  }
 }
 @media screen and (min-width: 1200px) {
   .header-logo-img {
-    width: 100%;
     max-width: 70px;
   }
   .header-main-text {
@@ -505,6 +486,9 @@ p {
     color: #493340;
     font-size: 20px;
     font-weight: 700;
+  }
+  .nav-link:hover, .nav-link:focus {
+    color: #fff;
   }
   .header-call-button {
     margin-top: 10px;
@@ -532,7 +516,7 @@ p {
   .header-call-button-link {
     font-family: inherit;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     text-align: center;
   }
@@ -638,6 +622,46 @@ p {
   color: #fff;
 }
 
+.general-main-text {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  color: #493340;
+  margin-bottom: 10px;
+}
+
+.general-main-text-bold {
+  font-weight: 700;
+}
+
+.general-hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.general-hero-text {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  color: #493340;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.general-hero-extra-subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #493340;
+  text-align: center;
+}
+
+.general-help-subtitle {
+  font-size: 20px;
+  ont-weight: 700;
+  color: #493340;
+  text-align: center;
+}
+
 .main-donate-button {
   min-width: 100px;
   margin-left: auto;
@@ -681,6 +705,10 @@ p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-donate-button {
+    font-weight: 700;
+    font-size: 14px;
+  }
   .general-main {
     min-height: 450px;
   }
@@ -689,6 +717,10 @@ p {
   }
 }
 @media screen and (min-width: 1200px) {
+  .main-donate-button {
+    font-weight: 700;
+    font-size: 20px;
+  }
   .general-main {
     min-height: 800px;
   }
@@ -709,6 +741,9 @@ p {
 }
 .current {
   color: #fff;
+}
+.current:hover, .current:focus {
+  color: #493340;
 }
 
 .current-dropdown {

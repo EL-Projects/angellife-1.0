@@ -158,6 +158,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .general-hero-subtitle {
+    font-size: 32px;
+  }
+  .general-hero-picture-and-text-wrapper {
+    display: flex;
+  }
   .main-donate-button {
     font-weight: 700;
     font-size: 14px;
@@ -168,6 +174,9 @@
   }
   .general-main-title {
     padding-top: 350px;
+  }
+  .general-main-text {
+    font-size: 15px;
   }
 }
 

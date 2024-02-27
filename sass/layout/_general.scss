@@ -25,6 +25,7 @@
 }
 
 .general-main-text {
+  font-family: inherit;
   font-size: 12px;
   text-align: center;
   font-weight: 400;
@@ -40,6 +41,7 @@
   margin-bottom: 20px;
 }
 .general-hero-text {
+  font-family: inherit;
   font-size: 12px;
   text-align: center;
   font-weight: 400;
@@ -54,13 +56,62 @@
   text-align: center;
 }
 
-.general-help-subtitle {
-  font-size: 20px;
-  ont-weight: 700;
-  color: #493340;
-  text-align: center;
+.background-color {
+  background-color: #d9d9d9;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+.general-help__item-image {
+  width: 100px;
 }
 
+.general-help-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #493340;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.general-help-extra-subtitle {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: #493340;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.general-help-text-bold {
+  font-weight: 700;
+}
+.general-help-text {
+  font-family: inherit;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  color: #493340;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.general-help-item {
+  background-color: #afcdcd;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgb(0 0 0 / 25%);
+  margin-bottom: 30px;
+}
+.general-help__item-image {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.general-help__item-text {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  // padding-top: 15px;
+  padding-bottom: 20px;
+}
 .main-donate-button {
   // position: relative;
   min-width: 100px;
@@ -81,7 +132,7 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #3d7097;
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 4;
@@ -89,6 +140,7 @@
   &:hover,
   &:focus {
     background-color: #3d7097;
+    box-shadow: 5px 5px 2px rgb(0 0 0 / 25%);
   }
 }
 

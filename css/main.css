@@ -34,7 +34,7 @@ img {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lunasima", sans-serif;
   color: #493340;
   background-color: #eff6fd;
 }
@@ -302,7 +302,7 @@ p {
   font-family: inherit;
   color: #ffffff;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 8px;
   text-align: center;
   direction: ltr;
 }
@@ -312,7 +312,7 @@ p {
 }
 
 .header-main-text {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -383,7 +383,7 @@ p {
     white-space: nowrap;
   }
   .header-call-button:hover, .header-call-button:focus {
-    background-color: orangered;
+    background-color: #e73042;
   }
   .header-call-button-link {
     font-family: inherit;
@@ -422,7 +422,10 @@ p {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: #ffffff;
+    color: #fff;
+  }
+  .header-donate-button:hover, .header-donate-button:focus {
+    background-color: #11b470;
   }
   .header {
     width: 100%;
@@ -500,8 +503,8 @@ p {
   .nav-link {
     text-align: center;
     color: #493340;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
   }
   .header-call-button {
     margin-top: 10px;
@@ -529,14 +532,14 @@ p {
   .header-call-button-link {
     font-family: inherit;
     color: #ffffff;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 14px;
     text-align: center;
   }
   .header-call-button-text {
     font-family: inherit;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1.87;
     text-align: center;
     white-space: nowrap;
@@ -585,8 +588,8 @@ p {
   }
   .nav-item {
     margin-right: 50px;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
   }
   .header-list {
@@ -711,4 +714,16 @@ p {
 .current-dropdown {
   color: #fff;
   background-color: #493340;
+}
+
+.lunasima-regular {
+  font-family: "Lunasima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lunasima-bold {
+  font-family: "Lunasima", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */

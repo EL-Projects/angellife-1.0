@@ -908,6 +908,19 @@ p {
   .general-main-text {
     font-size: 15px;
   }
+  .general-help-item {
+    text-align: start;
+    max-width: 380px;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .general-help-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-donate-button {
@@ -930,6 +943,19 @@ p {
     text-align: center;
     justify-content: center;
     color: #fff;
+  }
+  .general-help-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .general-help-item {
+    text-align: start;
+    max-width: 380px;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
   }
 }
 .current {

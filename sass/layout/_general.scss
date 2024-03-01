@@ -178,8 +178,24 @@
   .general-main-text {
     font-size: 15px;
   }
-}
 
+  .general-help-item {
+    // outline: 1px solid #eeeeee;
+    text-align: start;
+    max-width: 380px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .general-help-list {
+    display: flex;
+    // margin: 0 auto;
+    flex-wrap: wrap;
+    // margin: -15px;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .main-donate-button {
     font-weight: 700;
@@ -202,5 +218,24 @@
     text-align: center;
     justify-content: center;
     color: #fff;
+  }
+  .general-help-list {
+    display: flex;
+    // margin: 0 auto;
+    flex-wrap: wrap;
+    // margin: -15px;
+    justify-content: center;
+  }
+  .general-help-item {
+    // outline: 1px solid #eeeeee;
+    text-align: start;
+    max-width: 380px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+    // &:not(:last-child) {
+    //   margin-bottom: 30px;
+    // }
   }
 }

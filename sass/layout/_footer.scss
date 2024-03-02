@@ -3,7 +3,7 @@
 }
 
 .footer-logo-image {
-  padding-top: 10px;
+  padding-top: 30px;
   width: 60px;
 }
 .footer-button {
@@ -13,16 +13,17 @@
 }
 
 .footer-donate-button {
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 20px;
-  height: 25px;
-  min-width: 140px;
+  height: 30px;
+  min-width: 150px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: inherit;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.06em;
   background-color: #3d7097;
@@ -42,14 +43,15 @@
 .footer-join-button {
   margin-top: 10px;
   border-radius: 20px;
-  height: 25px;
-  min-width: 140px;
+  height: 30px;
+  min-width: 150px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: inherit;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.06em;
   background-color: #499573;
@@ -71,8 +73,8 @@
   font-size: 20px;
   font-weight: 700;
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -80,6 +82,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .footer-contact__item {
@@ -97,19 +100,20 @@
 
 .footer-socials-subtitle {
   font-family: inherit;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   color: #fff;
   //   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .footer-socials-list {
   margin-left: 80px;
   margin-right: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .footer-socials-icon {
   height: 26px;
@@ -118,4 +122,10 @@
 }
 .footer-socials {
   padding-bottom: 20px;
+}
+
+.footer-socials__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }

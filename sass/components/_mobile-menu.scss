@@ -29,16 +29,21 @@
   padding: 0;
   line-height: 0;
   cursor: pointer;
+  fill: #493340;
 
   &:hover,
   &:focus {
     fill: #2196f3;
   }
 }
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
-  border-bottom: #3d7097;
+.mobile-menu__item {
+  margin-bottom: 20px;
+  border-bottom: 3px solid #493340;
 }
+// .mobile-menu__item:not(:last-child) {
+//   margin-bottom: 15px;
+//   border-bottom: #3d7097;
+// }
 .mobile-menu__link {
   font-size: inherit;
   font-style: normal;
@@ -57,9 +62,15 @@
     color: #3d7097;
   }
 }
+.mobile-menu-contacts-list {
+  margin-top: 50px;
+}
 
 .mobile-menu-contacts__item {
-  margin-top: 23px;
+  :not(:last-child) {
+    margin-top: 15px;
+    border-bottom: #3d7097;
+  }
 }
 .mobile-menu-contacts__link-tel {
   font-family: inherit;

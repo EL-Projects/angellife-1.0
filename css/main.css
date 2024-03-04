@@ -836,7 +836,7 @@ p {
 .general-help-extra-subtitle {
   font-family: inherit;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   color: #493340;
   text-align: center;
   margin-top: 20px;
@@ -851,7 +851,7 @@ p {
   font-family: inherit;
   font-size: 12px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   color: #493340;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -879,7 +879,7 @@ p {
 .general-help__item-text {
   font-family: inherit;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   padding-bottom: 20px;
 }

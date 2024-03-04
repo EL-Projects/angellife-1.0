@@ -17,7 +17,6 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 700;
 }
 
 ul,
@@ -38,7 +37,7 @@ body {
   font-family: "Involve-VF", sans-serif;
   color: #493340;
   background-color: #eff6fd;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
 }
 .list {
   list-style: none;
@@ -56,13 +55,31 @@ body {
 }
 
 p {
-  font-weight: 600;
   font-family: "Involve-VF", sans-serif;
 }
 
 @font-face {
   font-family: "Involve-VF";
   src: url("./../fonts/Involve-VF.ttf") format("truetype");
+}
+// @font-face {
+//   font-family: "Ubuntu";
+//  src: url("./../fonts/Involve-VF.ttf") format("truetype");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "Involve-VF";
+  src: url("./../fonts/Involve-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve-VF";
+  src: url("./../fonts/Involve-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 // @font-face {

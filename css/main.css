@@ -17,7 +17,6 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 700;
 }
 
 ul,
@@ -38,7 +37,7 @@ body {
   font-family: "Involve-VF", sans-serif;
   color: #493340;
   background-color: #eff6fd;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
 }
 
 .list {
@@ -57,13 +56,24 @@ body {
 }
 
 p {
-  font-weight: 600;
   font-family: "Involve-VF", sans-serif;
 }
 
 @font-face {
   font-family: "Involve-VF";
   src: url("./../fonts/Involve-VF.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Involve-VF";
+  src: url("./../fonts/Involve-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve-VF";
+  src: url("./../fonts/Involve-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 .container {
   width: 100%;
@@ -762,6 +772,7 @@ p {
   display: flex;
   padding-top: 220px;
   font-family: inherit;
+  font-weight: 600;
   font-size: 20px;
   text-align: center;
   justify-content: center;
@@ -773,6 +784,7 @@ p {
   font-family: inherit;
   font-size: 12px;
   text-align: center;
+  font-weight: 400;
   color: #493340;
   margin-bottom: 10px;
 }
@@ -782,6 +794,7 @@ p {
 }
 
 .general-hero-subtitle {
+  font-weight: 500;
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: 20px;
@@ -792,6 +805,7 @@ p {
   font-family: inherit;
   font-size: 12px;
   text-align: center;
+  font-weight: 400;
   color: #493340;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -799,6 +813,7 @@ p {
 
 .general-hero-extra-subtitle {
   font-size: 15px;
+  font-weight: 500;
   color: #493340;
   text-align: center;
 }
@@ -824,6 +839,7 @@ p {
 .general-help-subtitle {
   line-height: 1.5;
   font-size: 20px;
+  font-weight: 500;
   color: #493340;
   text-align: center;
   margin-top: 20px;
@@ -833,6 +849,7 @@ p {
 .general-help-extra-subtitle {
   font-family: inherit;
   font-size: 15px;
+  font-weight: 500;
   color: #493340;
   text-align: center;
   margin-top: 20px;
@@ -840,13 +857,14 @@ p {
 }
 
 .general-help-text-bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .general-help-text {
   font-family: inherit;
   font-size: 12px;
   text-align: center;
+  font-weight: 400;
   color: #493340;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -874,6 +892,7 @@ p {
 .general-help__item-text {
   font-family: inherit;
   font-size: 12px;
+  font-weight: 400;
   text-align: center;
   padding-bottom: 20px;
 }

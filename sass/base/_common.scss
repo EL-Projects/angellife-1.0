@@ -55,10 +55,18 @@ body {
 
 p {
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Involve-VF", sans-serif;
 }
 
 @font-face {
   font-family: "Involve-VF";
   src: url("./../fonts/Involve-VF.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "involveregular";
+  src: url("../../fonts/involve-vf-webfont.woff2") format("woff2"),
+    url("../../fonts/involve-vf-webfont.woff.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

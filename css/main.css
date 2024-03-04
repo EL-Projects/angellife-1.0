@@ -882,7 +882,7 @@ p {
   border-radius: 5px;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
   margin-bottom: 30px;
-  max-width: 300px;
+  max-width: 350px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -1037,7 +1037,7 @@ p {
 
 .save-life-hero-title {
   line-height: 1.5;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 600;
   text-align: center;
   margin-top: 20px;
@@ -1045,7 +1045,7 @@ p {
 
 .save-life-hero-subtitle {
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -1061,7 +1061,7 @@ p {
   background-color: #afcdcd;
   border-radius: 5px;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
-  padding: 10px;
+  padding: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -1076,6 +1076,10 @@ p {
   margin-bottom: 20px;
 }
 
+.save-life-save-text-bold {
+  font-weight: 600;
+}
+
 .save-life-background-color {
   background-color: #d9d9d9;
   padding-top: 30px;
@@ -1087,7 +1091,7 @@ p {
 }
 
 .save-life-motivation-img {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .save-life-save-extra-text {
@@ -1101,7 +1105,7 @@ p {
 }
 
 .save-life-save-extra-text-wrapper {
-  padding: 10px;
+  padding: 20px;
   margin-top: 20px;
   background-color: #afcdcd;
   border-radius: 5px;
@@ -1109,19 +1113,178 @@ p {
 }
 
 .save-life-help-title {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .save-life-help-list {
-  margin-top: 20px;
+  margin-top: 50px;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
+}
+
+.sisters-main {
+  background-image: url(./../images/sisters.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 320px;
+}
+
+.sisters-hero-title {
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sisters-about-wrapper {
+  margin-top: 30px;
+  background-color: #afcdcd;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.sisters-about-text {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: start;
+  line-height: 1.5;
+}
+
+.sisters-about-text-bold {
+  font-weight: 600;
+}
+
+.sisters-help-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.sisters-background-color {
+  margin-top: 50px;
+  background-color: #d9d9d9;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.sisters-help-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.sisters-help-item-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.sisters-help-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.main-join-button {
+  min-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  padding: 5px 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #499573;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 4;
+}
+
+.volounters-main {
+  background-image: url(./../images/volounters.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 320px;
+}
+
+.volounters-main-title {
+  display: flex;
+  padding-top: 220px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.volounters-hero-title {
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.volounters-img {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.volounters-item {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.volounters-item-background {
+  margin-top: 20px;
+  background-color: #afcdcd;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.volounters-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.volounters-text-bold {
+  font-weight: 600;
 }
 
 .current {

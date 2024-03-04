@@ -26,7 +26,7 @@
 
 .save-life-hero-title {
   line-height: 1.5;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 600;
   text-align: center;
   margin-top: 20px;
@@ -34,7 +34,7 @@
 
 .save-life-hero-subtitle {
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -50,7 +50,7 @@
   background-color: #afcdcd;
   border-radius: 5px;
   box-shadow: 5px 5px 2px rgb(0 0 0 / 25%);
-  padding: 10px;
+  padding: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -64,6 +64,9 @@
     margin-bottom: 20px;
   }
 }
+.save-life-save-text-bold {
+  font-weight: 600;
+}
 
 .save-life-background-color {
   background-color: #d9d9d9;
@@ -75,7 +78,7 @@
   margin-top: 20px;
 }
 .save-life-motivation-img {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .save-life-save-extra-text {
   font-size: 17px;
@@ -88,7 +91,7 @@
 }
 
 .save-life-save-extra-text-wrapper {
-  padding: 10px;
+  padding: 20px;
   margin-top: 20px;
   background-color: #afcdcd;
   border-radius: 5px;
@@ -96,14 +99,14 @@
 }
 
 .save-life-help-title {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .save-life-help-list {
-  margin-top: 20px;
+  margin-top: 50px;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;

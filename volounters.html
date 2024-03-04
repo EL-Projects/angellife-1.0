@@ -156,20 +156,28 @@
 
     <!-- Main -->
     <section class="section">
-      <div class="general-main container">
-        <h1 class="general-main-title">Волонтери</h1>
-        <button class="main-donate-button btn" type="button">Допомогти</button>
+      <div class="volounters-main container">
+        <h1 class="volounters-main-title">Волонтери</h1>
+        <button class="main-join-button btn" type="button">Приєднатись</button>
       </div>
     </section>
     <!-- Hero volounters -->
     <section class="section">
       <div class="container">
-        <h2>Кожен має право на життя з моменту зачаття.</h2>
-        <div><img src="./images/volounters.png" alt="" /></div>
+        <h2 class="volounters-hero-title">
+          Кожен має право на життя з моменту зачаття.
+        </h2>
+        <div class="volounters-img">
+          <img
+            src="./images/volounters-text-img.png"
+            class="volounters-img"
+            alt=""
+          />
+        </div>
         <div>
-          <ul>
-            <li>
-              <p>
+          <ul class="volounters-list list">
+            <li class="volounters-item-background">
+              <p class="volounters-text">
                 Взяти участь у програмі може кожен охочий: професійні психологи,
                 беручи участь у консультуванні, добровольці, надаючи допомогу в
                 соціальному супроводі кризових вагітних, юристи через надання
@@ -179,25 +187,28 @@
                 нужденних підопічних.
               </p>
             </li>
-            <li>
-              <p>
-                Протиабортне консультування - це надання кризовій вагітній
-                повної інформації про аборт, його наслідки, надання
-                психологічноїта іншої допомоги.
+            <li class="volounters-item">
+              <p class="volounters-text">
+                <span class="volounters-text-bold"
+                  >Протиабортне консультування</span
+                >
+                - це надання кризовій вагітній повної інформації про аборт, його
+                наслідки, надання психологічноїта іншої допомоги.
               </p>
             </li>
-            <li>
-              <p>
-                Мета консультування - допомогти зберегти вагітність, обрати
-                життя. Проводиться за телефонами довіри, у соціальних мережах,
-                центрах допомоги. Подібне консультування дуже важливе, бо досі
-                велика кількість абортів робиться через незнання, нерозуміння
-                жінкою всіх його негативних наслідків, а також через важкі
-                матеріальні умови. Щоб жінка змінила своє рішення і зберегла
-                малюка, буває достатньо грамотної консультації фахівця, щирого
-                бажання допомогти їй розв'язати внутрішні та/або сімейні
-                проблеми, надання жінці реальної підтримки продуктами, речами,
-                предметами першої необхідності.
+            <li class="volounters-item-background">
+              <p class="volounters-text">
+                <span class="volounters-text-bold">Мета консультування</span> -
+                допомогти зберегти вагітність, обрати життя. Проводиться за
+                телефонами довіри, у соціальних мережах, центрах допомоги.
+                Подібне консультування дуже важливе, бо досі велика кількість
+                абортів робиться через незнання, нерозуміння жінкою всіх його
+                негативних наслідків, а також через важкі матеріальні умови. Щоб
+                жінка змінила своє рішення і зберегла малюка, буває достатньо
+                грамотної консультації фахівця, щирого бажання допомогти їй
+                розв'язати внутрішні та/або сімейні проблеми, надання жінці
+                реальної підтримки продуктами, речами, предметами першої
+                необхідності.
               </p>
             </li>
           </ul>
@@ -206,77 +217,91 @@
     </section>
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-logo">
-        <a href="./index.html"
-          ><img src="./images/logo.png" alt="" width="100px"
-        /></a>
-      </div>
-      <div class="footer-button">
-        <ul>
-          <li>
-            <button type="button">Допомогти</button>
-          </li>
-          <li>
-            <button type="button">Приєднатись</button>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-contacts">
-        <address>
-          <ul class="footer-contact-list list">
-            <li class="footer-contact__item">
-              <a
-                class="footer-contact__adress-link link"
-                href="https://goo.gl/maps/WrcRyUVtfEpf5qSH7"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Київ, 18a</a
-              >
+      <div class="footer container">
+        <div class="footer-logo">
+          <a href="./index.html"
+            ><img
+              class="footer-logo-image"
+              src="./images/logo.png"
+              alt=""
+              width="100px"
+          /></a>
+        </div>
+        <div class="footer-button">
+          <ul class="footer-button-list list">
+            <li>
+              <button class="footer-donate-button btn" type="button">
+                Допомогти
+              </button>
             </li>
-            <li class="footer-contact__item">
-              <a
-                class="footer-contact__mail-link link"
-                href="mailto:angellife@gmail.com"
-                >angellife@gmail.com</a
-              >
-            </li>
-            <li class="footer-contact__item">
-              <a class="footer-contact__tel-link link" href="tel:+38067000000"
-                >+380-67-000-000</a
-              >
+            <li>
+              <button class="footer-join-button btn" type="button">
+                Приєднатись
+              </button>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="socials">
-        <h2>Ми у соцмережах</h2>
-        <div class="social-link-icons">
-          <ul>
-            <li>
-              <a href=""
-                ><svg class="" width="35px" height="35px">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="" width="35px" height="35px">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="" width="35px" height="35px">
-                  <use href="./images/icons.svg#icon-viber"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="" width="35px" height="35px">
-                  <use href="./images/icons.svg#icon-telegram"></use></svg
-              ></a>
-            </li>
-          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h2 class="footer-contacts-subtitle">Контакти</h2>
+          <address class="footer-contact-adress">
+            <ul class="footer-contact-list list">
+              <li class="footer-contact__item">
+                <a
+                  class="footer-contact__adress-link link"
+                  href="https://maps.app.goo.gl/HyNagXa3AdrUHecW8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ул. Богатирськая, 18А, Київ</a
+                >
+              </li>
+              <li class="footer-contact__item">
+                <a
+                  class="footer-contact__mail-link link"
+                  href="mailto:aangellife.kyiv@gmail.com"
+                  >angellife.kyiv@gmail.com</a
+                >
+              </li>
+              <li class="footer-contact__item">
+                <a
+                  class="footer-contact__tel-link link"
+                  href="tel:+380985530990"
+                  >+380-98-55-30-990</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-socials">
+          <h2 class="footer-socials-subtitle">Ми у соцмережах</h2>
+          <div class="footer-social-link-icons">
+            <ul class="footer-socials-list list">
+              <li class="footer-socials__item">
+                <a class="footer-socials-link link" href=""
+                  ><svg class="footer-socials-icon" width="35px" height="35px">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+
+              <li class="footer-socials__item">
+                <a class="footer-socials-link link" href=""
+                  ><svg class="footer-socials-icon" width="35px" height="35px">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="footer-socials__item">
+                <a class="footer-socials-link link" href=""
+                  ><svg class="footer-socials-icon" width="35px" height="35px">
+                    <use href="./images/icons.svg#icon-viber"></use></svg
+                ></a>
+              </li>
+              <li class="footer-socials__item">
+                <a class="footer-socials-link link" href=""
+                  ><svg class="footer-socials-icon" width="35px" height="35px">
+                    <use href="./images/icons.svg#icon-telegram"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

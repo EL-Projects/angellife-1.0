@@ -17,6 +17,7 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 ul,
@@ -761,7 +762,6 @@ p {
   display: flex;
   padding-top: 220px;
   font-family: inherit;
-  font-weight: 700;
   font-size: 20px;
   text-align: center;
   justify-content: center;
@@ -773,7 +773,6 @@ p {
   font-family: inherit;
   font-size: 12px;
   text-align: center;
-  font-weight: 700;
   color: #493340;
   margin-bottom: 10px;
 }
@@ -783,7 +782,6 @@ p {
 }
 
 .general-hero-subtitle {
-  font-weight: 700;
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: 20px;
@@ -794,7 +792,6 @@ p {
   font-family: inherit;
   font-size: 12px;
   text-align: center;
-  font-weight: 600;
   color: #493340;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -802,7 +799,6 @@ p {
 
 .general-hero-extra-subtitle {
   font-size: 15px;
-  font-weight: 700;
   color: #493340;
   text-align: center;
 }
@@ -828,7 +824,6 @@ p {
 .general-help-subtitle {
   line-height: 1.5;
   font-size: 20px;
-  font-weight: 700;
   color: #493340;
   text-align: center;
   margin-top: 20px;
@@ -838,7 +833,6 @@ p {
 .general-help-extra-subtitle {
   font-family: inherit;
   font-size: 15px;
-  font-weight: 700;
   color: #493340;
   text-align: center;
   margin-top: 20px;
@@ -853,7 +847,6 @@ p {
   font-family: inherit;
   font-size: 12px;
   text-align: center;
-  font-weight: 700;
   color: #493340;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -881,7 +874,6 @@ p {
 .general-help__item-text {
   font-family: inherit;
   font-size: 12px;
-  font-weight: 700;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -1018,7 +1010,6 @@ p {
   display: flex;
   padding-top: 220px;
   font-family: inherit;
-  font-weight: 700;
   font-size: 20px;
   text-align: center;
   justify-content: center;
@@ -1029,7 +1020,6 @@ p {
 .save-life-hero-title {
   line-height: 1.5;
   font-size: 20px;
-  font-weight: 600;
   text-align: center;
   margin-top: 10px;
 }
@@ -1037,13 +1027,11 @@ p {
 .save-life-hero-subtitle {
   text-align: center;
   font-size: 15px;
-  font-weight: 700;
   margin-bottom: 10px;
 }
 
 .save-life-hero-text {
   font-size: 12px;
-  font-weight: 700;
   text-align: center;
   line-height: 1.5;
 }

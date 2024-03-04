@@ -302,10 +302,9 @@ p {
 
 .header-call-button {
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 12px;
   height: 25px;
   min-width: 150px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   display: flex;
   align-items: center;
@@ -322,13 +321,14 @@ p {
 }
 .header-call-button:hover, .header-call-button:focus {
   background-color: #e62034;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .header-call-button-link {
   font-family: inherit;
   color: #ffffff;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   direction: ltr;
 }
@@ -339,7 +339,7 @@ p {
 
 .header-main-text {
   letter-spacing: 0;
-  font-size: 15px;
+  font-size: 17px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -373,7 +373,7 @@ p {
 .header-main-text {
   font-family: inherit;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -851,7 +851,7 @@ p {
 
 .general-help-extra-subtitle {
   font-family: inherit;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: #493340;
   text-align: center;
@@ -865,7 +865,7 @@ p {
 
 .general-help-text {
   font-family: inherit;
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
   font-weight: 500;
   color: #493340;

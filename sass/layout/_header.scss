@@ -143,6 +143,10 @@
     text-align: center;
     color: #493340;
     font-weight: 700;
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
   }
   .header-call-button {
     margin-top: 10px;

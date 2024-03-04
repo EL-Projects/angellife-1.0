@@ -28,7 +28,7 @@
   font-family: inherit;
   font-size: 12px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   color: #493340;
   margin-bottom: 10px;
 }
@@ -37,6 +37,9 @@
 }
 
 .general-hero-subtitle {
+  font-weight: 700;
+  // word-spacing: 2em;
+  line-height: 1.5;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -44,7 +47,7 @@
   font-family: inherit;
   font-size: 12px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   color: #493340;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -73,6 +76,7 @@
 }
 
 .general-help-subtitle {
+  line-height: 1.5;
   font-size: 20px;
   font-weight: 700;
   color: #493340;
@@ -96,10 +100,14 @@
   font-family: inherit;
   font-size: 12px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   color: #493340;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: #afcdcd;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgb(0 0 0 / 25%);
+  padding: 10px;
 }
 .general-help-item {
   background-color: #afcdcd;

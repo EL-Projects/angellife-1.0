@@ -37,6 +37,7 @@ body {
   font-family: "Involve-VF", sans-serif;
   color: #493340;
   background-color: #eff6fd;
+  letter-spacing: 0.08em;
 }
 
 .list {
@@ -789,6 +790,7 @@ p {
 }
 
 .general-hero-text {
+  letter-spacing: 0.08em;
   font-family: inherit;
   font-size: 12px;
   text-align: center;

@@ -34,7 +34,7 @@ img {
 }
 
 body {
-  font-family: "Lunasima", sans-serif;
+  font-family: "Involve-VF", sans-serif;
   color: #493340;
   background-color: #eff6fd;
 }
@@ -56,4 +56,9 @@ body {
 p {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "Involve-VF";
+  src: url("../fonts/Involve-VF.ttf") format("truetype");
 }

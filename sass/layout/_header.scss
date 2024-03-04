@@ -3,7 +3,8 @@
 }
 .header-logo-img {
   width: 100%;
-  max-width: 30px;
+  max-width: 60px;
+  min-width: 25px;
 }
 
 .header-list {
@@ -97,7 +98,7 @@
 .header-main-text {
   letter-spacing: 0;
   font-size: 15px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
   text-align: center;

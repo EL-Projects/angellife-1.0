@@ -257,7 +257,8 @@ p {
 
 .header-logo-img {
   width: 100%;
-  max-width: 30px;
+  max-width: 60px;
+  min-width: 25px;
 }
 
 .header-list {
@@ -339,7 +340,7 @@ p {
 .header-main-text {
   letter-spacing: 0;
   font-size: 15px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
   text-align: center;
@@ -774,7 +775,7 @@ p {
   padding-top: 220px;
   font-family: inherit;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -1011,7 +1012,7 @@ p {
   }
 }
 .save-life-main {
-  background-image: url(./../images/main-new.jpg);
+  background-image: url(./../images/save-life.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1027,7 +1028,7 @@ p {
   padding-top: 220px;
   font-family: inherit;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 30px;
   text-align: center;
   justify-content: center;
   margin-bottom: 20px;

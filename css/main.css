@@ -36,7 +36,7 @@ img {
 body {
   font-family: "Involve-VF", sans-serif;
   color: #493340;
-  background-color: #eff6fd;
+  background-color: #eff6eb;
   letter-spacing: 0.05em;
 }
 
@@ -385,7 +385,6 @@ p {
     display: none;
   }
   .nav-link {
-    background-color: green;
     text-align: center;
     color: #493340;
     font-weight: 700;
@@ -1004,7 +1003,7 @@ p {
     font-size: 14px;
   }
   .general-main {
-    min-height: 950px;
+    min-height: 420px;
   }
   .general-main-title {
     padding-top: 350px;
@@ -1259,6 +1258,10 @@ p {
   align-content: center;
 }
 
+.save-life-main-title {
+  padding-top: 280px;
+}
+
 @media screen and (min-width: 1200px) {
   .save-life-main {
     min-height: 700px;
@@ -1299,7 +1302,6 @@ p {
     flex-direction: row;
   }
   .save-life-main-title {
-    padding-top: 200px;
     margin-bottom: 30px;
     display: flex;
     font-family: inherit;
@@ -1320,6 +1322,18 @@ p {
   width: 100%;
   margin: 0 auto;
   min-height: 320px;
+}
+
+.sisters-main-title {
+  display: flex;
+  padding-top: 220px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .sisters-hero-title {
@@ -1387,6 +1401,17 @@ p {
   .sisters-main {
     min-height: 700px;
   }
+  .sisters-main-title {
+    padding-top: 400px;
+    margin-bottom: 30px;
+    display: flex;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+  }
   .sisters-hero-title {
     font-size: 30px;
   }
@@ -1397,6 +1422,112 @@ p {
   .sisters-about-text {
     margin-left: 30px;
     font-size: 17px;
+  }
+  .sisters-help-item {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
 .main-join-button {
@@ -1483,6 +1614,10 @@ p {
 
 .volounters-text-bold {
   font-weight: 600;
+}
+
+.volounters-main-title {
+  padding-top: 350px;
 }
 
 @media screen and (min-width: 1200px) {

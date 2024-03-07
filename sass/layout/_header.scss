@@ -143,6 +143,7 @@
     display: none;
   }
   .nav-link {
+    background-color: green;
     text-align: center;
     color: #493340;
     font-weight: 700;
@@ -189,7 +190,7 @@
   .header-call-button-text {
     font-family: inherit;
     font-weight: 400;
-    font-size: 7px;
+    font-size: 6px;
     line-height: 1.87;
     text-align: center;
     white-space: nowrap;
@@ -227,6 +228,15 @@
       background-color: #11b470;
       // background-color: #116db4;
     }
+  }
+  .header-donate-button-link {
+    font-family: inherit;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    // line-height: 1.87;
+    text-align: center;
   }
   .header {
     width: 100%;
@@ -316,24 +326,24 @@
 
 // for desktop
 @media screen and (min-width: 1200px) {
-  // .header {
-  //   background-image: linear-gradient(
-  //     to right,
-  //     rgba(47, 48, 58, 0.4),
-  //     rgba(47, 48, 58, 0.4)
-  //   );
-  // }
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .header-logo-img {
     // width: 100%;
-    max-width: 70px;
+    max-width: 120px;
   }
 
   .header-main-text {
+    margin-right: auto;
     margin-left: 50px;
     margin-top: 10px;
     font-size: 40px;
+    margin-right: 20px;
   }
   .nav-link {
+    // background-color: green;
     text-align: center;
     color: #493340;
     font-size: 20px;
@@ -344,19 +354,21 @@
     }
   }
   .header-call-button {
+    padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    height: 40px;
-    min-width: 200px;
+    height: 50px;
+    min-width: 250px;
     //   padding: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: inherit;
-    font-weight: 600;
-    letter-spacing: 0.06em;
+    // font-size: 20px;
+    // font-family: inherit;
+    // font-weight: 600;
+    // letter-spacing: 0.06em;
     background-color: #c74b57;
     transition-property: background-color, box-shadow;
     transition-duration: 250ms;
@@ -374,8 +386,9 @@
   .header-call-button-link {
     font-family: inherit;
     color: #ffffff;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.1em;
     // line-height: 1.87;
     text-align: center;
   }
@@ -389,16 +402,17 @@
   }
 
   .header-donate-button {
+    margin-top: 5px;
     margin-bottom: 10px;
     display: flex;
     //   margin-top: 5px;
     border-radius: 5px;
-    height: 40px;
-    min-width: 200px;
+    height: 50px;
+    min-width: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
-    font-family: inherit;
-    font-weight: 700;
+    // font-family: inherit;
+    // font-weight: 700;
     //   font-size: 12px;
     //   line-height: 1.87;
     font-size: 14px;
@@ -418,11 +432,31 @@
       box-shadow: 5px 5px 2px rgb(0 0 0 / 25%);
     }
   }
+  .header-call-button-link {
+    font-family: inherit;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    // line-height: 1.87;
+    text-align: center;
+  }
+
+  .header-donate-button-link {
+    font-family: inherit;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    // line-height: 1.87;
+    text-align: center;
+  }
+
   .header {
     width: 100%;
     position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-image: none;
     // background-image: linear-gradient(
     //   to down,
@@ -454,7 +488,7 @@
   }
   .header-list {
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .header-contact-list {
     display: block;

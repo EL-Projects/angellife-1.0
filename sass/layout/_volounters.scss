@@ -86,3 +86,9 @@
 .volounters-text-bold {
   font-weight: 600;
 }
+
+@media screen and (min-width: 1200px) {
+  .volounters-main {
+    min-height: 700px;
+  }
+}

@@ -93,7 +93,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1300px;
   }
 }
 
@@ -385,6 +385,7 @@ p {
     display: none;
   }
   .nav-link {
+    background-color: green;
     text-align: center;
     color: #493340;
     font-weight: 700;
@@ -425,7 +426,7 @@ p {
   .header-call-button-text {
     font-family: inherit;
     font-weight: 400;
-    font-size: 7px;
+    font-size: 6px;
     line-height: 1.87;
     text-align: center;
     white-space: nowrap;
@@ -456,6 +457,14 @@ p {
   }
   .header-donate-button:hover, .header-donate-button:focus {
     background-color: #11b470;
+  }
+  .header-donate-button-link {
+    font-family: inherit;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-align: center;
   }
   .header {
     width: 100%;
@@ -500,13 +509,19 @@ p {
   }
 }
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .header-logo-img {
-    max-width: 70px;
+    max-width: 120px;
   }
   .header-main-text {
+    margin-right: auto;
     margin-left: 50px;
     margin-top: 10px;
     font-size: 40px;
+    margin-right: 20px;
   }
   .nav-link {
     text-align: center;
@@ -518,18 +533,16 @@ p {
     color: #fff;
   }
   .header-call-button {
+    padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    height: 40px;
-    min-width: 200px;
+    height: 50px;
+    min-width: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: inherit;
-    font-weight: 600;
-    letter-spacing: 0.06em;
     background-color: #c74b57;
     transition-property: background-color, box-shadow;
     transition-duration: 250ms;
@@ -544,8 +557,9 @@ p {
   .header-call-button-link {
     font-family: inherit;
     color: #ffffff;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.1em;
     text-align: center;
   }
   .header-call-button-text {
@@ -557,15 +571,14 @@ p {
     white-space: nowrap;
   }
   .header-donate-button {
+    margin-top: 5px;
     margin-bottom: 10px;
     display: flex;
     border-radius: 5px;
-    height: 40px;
-    min-width: 200px;
+    height: 50px;
+    min-width: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
-    font-family: inherit;
-    font-weight: 700;
     font-size: 14px;
     align-items: center;
     text-align: center;
@@ -581,11 +594,27 @@ p {
     background-color: #3d7097;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
   }
+  .header-call-button-link {
+    font-family: inherit;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  .header-donate-button-link {
+    font-family: inherit;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
   .header {
     width: 100%;
     position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-image: none;
   }
   .narrow {
@@ -610,7 +639,7 @@ p {
   }
   .header-list {
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .header-contact-list {
     display: block;
@@ -758,6 +787,25 @@ p {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-logo-image {
+    width: 100px;
+    padding-top: 0;
+  }
+  .footer-donate-button {
+    margin-top: 0;
+  }
+}
 .general-main {
   background-image: url(./../images/main-new.jpg);
   background-size: cover;
@@ -943,14 +991,20 @@ p {
     font-size: 32px;
   }
   .general-hero-picture-and-text-wrapper {
+    width: 100%;
     display: flex;
+    align-items: center;
+  }
+  .general-hero-img {
+    border-radius: 5px;
   }
   .main-donate-button {
+    display: none;
     font-weight: 700;
     font-size: 14px;
   }
   .general-main {
-    min-height: 450px;
+    min-height: 950px;
   }
   .general-main-title {
     padding-top: 350px;
@@ -973,20 +1027,39 @@ p {
     /* align-content: center; */
     flex-direction: row;
   }
+  .general-hero-text-container {
+    width: 50%;
+  }
+  .general-hero-img-container {
+    width: 50%;
+  }
+  .help-background-color {
+    background-color: #d9d9d9;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-donate-button {
+    display: none;
     font-weight: 700;
     font-size: 20px;
   }
+  .help-background-color {
+    background-color: #d9d9d9;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+  }
   .general-main {
-    min-height: 800px;
+    min-height: 700px;
   }
   .general-main-title {
     margin-top: auto;
   }
   .general-main-title {
-    padding-top: 150px;
+    padding-top: 200px;
     margin-bottom: 30px;
     display: flex;
     font-family: inherit;
@@ -1001,6 +1074,7 @@ p {
     /* flex-wrap: wrap; */
     /* justify-content: center; */
     flex-direction: row;
+    margin-top: 50px;
   }
   .general-help-item {
     text-align: start;
@@ -1009,6 +1083,61 @@ p {
     margin: 15px;
     justify-content: center;
     margin-bottom: 30px;
+  }
+  .general-hero-picture-and-text-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .general-hero-subtitle {
+    font-size: 30px;
+  }
+  .general-hero-extra-subtitle {
+    font-size: 21px;
+  }
+  .general-main-text {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+  .general-hero-text {
+    font-size: 16px;
+    max-width: 700px;
+  }
+  .general-help-subtitle {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .general-help-text {
+    font-size: 18px;
+    max-width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .general-help__item-text {
+    font-size: 19px;
+  }
+  .general-help__item-image {
+    width: 150px;
+  }
+  .general-hero-img {
+    max-width: fit-content;
+    height: auto;
+    width: 80%;
+    border-radius: 5px;
+  }
+  .general-hero-text-container {
+    width: 50%;
+  }
+  .general-hero-img-container {
+    width: 50%;
+  }
+  .general-help-text {
+    padding: 20px;
   }
 }
 .save-life-main {
@@ -1084,6 +1213,8 @@ p {
   background-color: #d9d9d9;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .save-life-hero-text-wrapper {
@@ -1128,6 +1259,57 @@ p {
   align-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .save-life-main {
+    min-height: 700px;
+  }
+  .save-life-hero-title {
+    font-size: 25px;
+  }
+  .save-life-hero-wrapper {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .save-life-hero-text-wrapper {
+    margin-right: auto;
+    max-width: 700px;
+    margin-left: 35px;
+  }
+  .save-life-text-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .pregnant-img {
+    min-width: 600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .save-life-save-extra-text-wrapper {
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .save-life-help-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .save-life-main-title {
+    padding-top: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+  }
+}
 .sisters-main {
   background-image: url(./../images/sisters.jpg);
   background-size: cover;
@@ -1201,6 +1383,22 @@ p {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .sisters-main {
+    min-height: 700px;
+  }
+  .sisters-hero-title {
+    font-size: 30px;
+  }
+  .sisters-about-wrapper {
+    display: flex;
+    padding: 30px;
+  }
+  .sisters-about-text {
+    margin-left: 30px;
+    font-size: 17px;
+  }
+}
 .main-join-button {
   min-width: 100px;
   margin-left: auto;
@@ -1287,6 +1485,11 @@ p {
   font-weight: 600;
 }
 
+@media screen and (min-width: 1200px) {
+  .volounters-main {
+    min-height: 700px;
+  }
+}
 .current {
   color: #fff;
 }

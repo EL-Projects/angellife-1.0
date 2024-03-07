@@ -178,15 +178,21 @@
     font-size: 32px;
   }
   .general-hero-picture-and-text-wrapper {
+    width: 100%;
     display: flex;
+    align-items: center;
+  }
+  .general-hero-img {
+    border-radius: 5px;
   }
   .main-donate-button {
+    display: none;
     font-weight: 700;
     font-size: 14px;
   }
 
   .general-main {
-    min-height: 450px;
+    min-height: 950px;
   }
   .general-main-title {
     padding-top: 350px;
@@ -216,21 +222,41 @@
     // // margin: -15px;
     // justify-content: center;
   }
+  .general-hero-text-container {
+    width: 50%;
+  }
+  .general-hero-img-container {
+    width: 50%;
+  }
+
+  .help-background-color {
+    background-color: #d9d9d9;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-donate-button {
+    display: none;
     font-weight: 700;
     font-size: 20px;
   }
+  .help-background-color {
+    background-color: #d9d9d9;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+  }
   .general-main {
-    min-height: 800px;
+    min-height: 700px;
   }
 
   .general-main-title {
     margin-top: auto;
   }
   .general-main-title {
-    padding-top: 150px;
+    padding-top: 200px;
     margin-bottom: 30px;
     display: flex;
     font-family: inherit;
@@ -250,6 +276,7 @@
     /* flex-wrap: wrap; */
     /* justify-content: center; */
     flex-direction: row;
+    margin-top: 50px;
   }
   .general-help-item {
     // outline: 1px solid #eeeeee;
@@ -262,5 +289,67 @@
     // &:not(:last-child) {
     //   margin-bottom: 30px;
     // }
+  }
+  .general-hero-picture-and-text-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .general-hero-subtitle {
+    font-size: 30px;
+  }
+
+  .general-hero-extra-subtitle {
+    font-size: 21px;
+  }
+  .general-main-text {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+
+  .general-hero-text {
+    font-size: 16px;
+    max-width: 700px;
+  }
+  .general-help-subtitle {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .general-help-text {
+    font-size: 18px;
+    max-width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .general-help__item-text {
+    font-size: 19px;
+  }
+
+  .general-help__item-image {
+    width: 150px;
+  }
+  .general-hero-img {
+    max-width: fit-content;
+    height: auto;
+    width: 80%;
+    border-radius: 5px;
+    // min-width: 500px;
+    // max-width: 650px;
+  }
+  .general-hero-text-container {
+    width: 50%;
+  }
+  .general-hero-img-container {
+    width: 50%;
+  }
+  .general-help-text {
+    padding: 20px;
   }
 }

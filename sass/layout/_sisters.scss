@@ -73,3 +73,21 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .sisters-main {
+    min-height: 700px;
+  }
+  .sisters-hero-title {
+    font-size: 30px;
+  }
+
+  .sisters-about-wrapper {
+    display: flex;
+    padding: 30px;
+  }
+  .sisters-about-text {
+    margin-left: 30px;
+    font-size: 17px;
+  }
+}

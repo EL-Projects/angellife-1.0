@@ -72,6 +72,8 @@
   background-color: #d9d9d9;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .save-life-hero-text-wrapper {
@@ -112,4 +114,61 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .save-life-main {
+    min-height: 700px;
+  }
+  .save-life-hero-title {
+    font-size: 25px;
+  }
+  .save-life-hero-wrapper {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .save-life-hero-text-wrapper {
+    margin-right: auto;
+    // margin-left: auto;
+    max-width: 700px;
+    margin-left: 35px;
+  }
+  .save-life-text-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .pregnant-img {
+    min-width: 600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .save-life-save-extra-text-wrapper {
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    // max-width: 700px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  .save-life-help-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .save-life-main-title {
+    padding-top: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+  }
 }

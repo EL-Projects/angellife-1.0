@@ -129,3 +129,25 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-logo-image {
+    width: 100px;
+    padding-top: 0;
+  }
+  .footer-donate-button {
+    margin-top: 0;
+  }
+  .footer-contacts-subtitle {
+  }
+}

@@ -1415,10 +1415,11 @@ p {
   text-align: center;
   font-size: 15px;
   font-weight: 600;
+  margin-top: 20px;
 }
 
-.sisters-help-item:not(:last-child) {
-  margin-bottom: 30px;
+.sisters-help-card-img-text {
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1453,24 +1454,6 @@ p {
     margin-right: auto;
   }
 }
-.carousel-container {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-item {
-  flex: 0 0 auto;
-  width: 100%;
-  text-align: center;
-}
-
 .sisters-carousel-button {
   position: absolute;
   top: 50%;
@@ -1479,7 +1462,6 @@ p {
   border: none;
   font-size: 40px;
   cursor: pointer;
-  color: #493340;
 }
 
 .prev-btn {

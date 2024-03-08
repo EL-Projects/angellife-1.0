@@ -125,3 +125,52 @@ var swiper = new Swiper(".mySwiper4", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// useEffect(() => {
+//   const swiperContainer = swiperRef.current;
+//   const params = {
+//     navigation: true,
+//     pagination: true,
+//     //add this
+//     injectStyles: [
+//       `
+//           .swiper-button-next,
+//           .swiper-button-prev {
+//             background-color: white;
+//             background-position: center;
+//             background-size: 40px;
+//             background-repeat: no-repeat;
+//             padding: 8px 16px;
+//             border-radius: 100%;
+//             border: 2px solid black;
+//             color: red;
+//           }
+
+//           .swiper-button-prev {
+//             background-image: url("/box-arrow-in-left.svg");
+//           }
+
+//           .swiper-button-next {
+//             background-image: url("/box-arrow-in-right.svg");
+//           }
+
+//           .swiper-button-next::after,
+//           .swiper-button-prev::after {
+//             content: "";
+//           }
+
+//           .swiper-pagination-bullet{
+//             width: 40px;
+//             height: 40px;
+//             background-color: red;
+//           }
+//       `,
+//     ],
+//   };
+
+//   Object.assign(swiperContainer, params);
+//   swiperContainer.initialize();
+// }, []);
+
+document.documentElement.style.setProperty("--swiper-theme-color", "#493340");
+document.documentElement.style.setProperty("--swiper-navigation-size", "26px");

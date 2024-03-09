@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 999;
   overflow: auto; /* Enable scrolling within the lightbox */
   text-align: center;
@@ -24,11 +24,11 @@
 }
 .close-button {
   position: absolute;
-  top: 20px;
+  top: 100px;
   right: 20px;
   cursor: pointer;
   color: white;
-  font-size: 20px;
+  font-size: 65px;
   z-index: 1000;
 }
 .arrow {
@@ -37,21 +37,21 @@
   transform: translateY(-50%);
   cursor: pointer;
   color: white;
-  font-size: 30px;
+  font-size: 50px;
   z-index: 1000;
 }
 .arrow.left {
-  left: 20px;
+  left: 30px;
 }
 .arrow.right {
-  right: 20px;
+  right: 30px;
 }
 .preview-images {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.preview-images img {
+.preview-images {
   max-width: 100px;
   max-height: 100px;
   margin: 10px;

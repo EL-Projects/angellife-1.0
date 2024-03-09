@@ -21,9 +21,18 @@ var images = [
     "image3_4.jpg",
     "image3_5.jpg",
   ],
+  [
+    "images/main.jpg",
+    "images/main-new.jpg",
+    "image3_3.jpg",
+    "image3_4.jpg",
+    "image3_5.jpg",
+  ],
   // Add more arrays of image URLs here for each lightbox
 ];
 
+var startX = 0;
+var endX = 0;
 function openLightbox(lightboxId) {
   currentImageIndex = 0;
   updateImage(lightboxId);
@@ -83,11 +92,10 @@ function handleSwipe() {
     prevImage(currentLightboxId);
   }
 }
+
 function closeLightboxOutside(event) {
-  if (event.target.classList.contains("lightbox-content")) {
-    var lightboxId = parseInt(
-      event.target.parentNode.id.replace("lightbox-", "")
-    );
+  if (event.target.classList.contains("lightbox")) {
+    var lightboxId = parseInt(event.currentTarget.id.replace("lightbox-", ""));
     closeLightbox(lightboxId);
   }
 }

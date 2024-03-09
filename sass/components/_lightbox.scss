@@ -7,7 +7,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 999;
-  overflow: auto; /* Enable scrolling within the lightbox */
+  overflow: hidden; /* Enable scrolling within the lightbox */
   text-align: center;
 }
 .lightbox-content {

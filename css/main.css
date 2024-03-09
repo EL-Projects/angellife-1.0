@@ -1762,6 +1762,11 @@ p {
     margin-right: auto;
   }
 }
+.sisters-lightbox {
+  display: flex;
+  justify-content: center;
+}
+
 .sisters-carousel-button {
   position: absolute;
   top: 50%;

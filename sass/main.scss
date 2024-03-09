@@ -5,6 +5,9 @@
 
 // Components
 @import "./components/dropdown";
+@import "./components/backdrop";
+@import "./components/contact-form";
+@import "./components/modal-btn";
 @import "./components/mobile-menu";
 @import "./components/swiper";
 
@@ -29,3 +32,4 @@
 
 // Utils
 @import "./utils/variables";
+@import "./utils/visually-hidden";

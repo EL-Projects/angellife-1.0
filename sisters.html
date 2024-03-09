@@ -19,6 +19,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    /> -->
   </head>
   <body>
     <!-- Header -->
@@ -204,7 +212,60 @@
     <section class="section">
       <div class="sisters-background-color container">
         <h2 class="sisters-help-title">Ми допомагаємо</h2>
-        <div class="swiper mySwiper">
+
+        <!-- Preview images -->
+        <!-- Preview images -->
+        <div class="preview-images">
+          <img
+            src="image1.jpg"
+            alt="Preview Image 1"
+            onclick="openLightbox(1)"
+          />
+          <img
+            src="image2.jpg"
+            alt="Preview Image 2"
+            onclick="openLightbox(2)"
+          />
+          <img
+            src="image3.jpg"
+            alt="Preview Image 3"
+            onclick="openLightbox(3)"
+          />
+          <!-- Add more preview images here -->
+        </div>
+
+        <!-- Lightboxes -->
+        <div id="lightbox-container">
+          <div class="lightbox" id="lightbox-1">
+            <span class="close-button" onclick="closeLightbox(1)">&times;</span>
+            <span class="arrow left" onclick="prevImage(1)">&#10094;</span>
+            <span class="arrow right" onclick="nextImage(1)">&#10095;</span>
+            <div class="lightbox-content">
+              <img id="lightbox-img-1" src="" alt="Image 1" />
+            </div>
+          </div>
+
+          <div class="lightbox" id="lightbox-2">
+            <span class="close-button" onclick="closeLightbox(2)">&times;</span>
+            <span class="arrow left" onclick="prevImage(2)">&#10094;</span>
+            <span class="arrow right" onclick="nextImage(2)">&#10095;</span>
+            <div class="lightbox-content">
+              <img id="lightbox-img-2" src="" alt="Image 2" />
+            </div>
+          </div>
+
+          <div class="lightbox" id="lightbox-3">
+            <span class="close-button" onclick="closeLightbox(3)">&times;</span>
+            <span class="arrow left" onclick="prevImage(3)">&#10094;</span>
+            <span class="arrow right" onclick="nextImage(3)">&#10095;</span>
+            <div class="lightbox-content">
+              <img id="lightbox-img-3" src="" alt="Image 3" />
+            </div>
+          </div>
+
+          <!-- Add more lightboxes as needed -->
+        </div>
+        <!-- <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="">
@@ -342,7 +403,8 @@
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-        </div>
+        </div> -->
+
         <!-- <div>
           <ul class="sisters-help-list list">
             <li class="sisters-help-item">
@@ -540,8 +602,13 @@
       </div>
     </footer>
     <!-- slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> -->
+    <!-- <script src="./js/swiper.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script> -->
+    <script src="./js/lightbox.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

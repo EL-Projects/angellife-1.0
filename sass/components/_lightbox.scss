@@ -1,59 +1,14 @@
-.lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 999;
-  overflow: hidden; /* Enable scrolling within the lightbox */
-  text-align: center;
-}
-.lightbox-content {
+.sisters-gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  position: relative; /* Necessary for positioning arrows */
 }
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
+
+.gallery a {
+  margin: 5px;
 }
-.close-button {
-  position: absolute;
-  top: 100px;
-  right: 20px;
-  cursor: pointer;
-  color: white;
-  font-size: 65px;
-  z-index: 1000;
-}
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  color: white;
-  font-size: 50px;
-  z-index: 1000;
-}
-.arrow.left {
-  left: 30px;
-}
-.arrow.right {
-  right: 30px;
-}
-.preview-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.preview-images {
-  max-width: 100px;
-  max-height: 100px;
-  margin: 10px;
-  cursor: pointer;
+
+.gallery img {
+  width: 200px; /* Размер миниатюры */
+  height: auto;
 }

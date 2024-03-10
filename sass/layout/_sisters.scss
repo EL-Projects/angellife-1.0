@@ -66,24 +66,30 @@
 }
 
 .sisters-help-card {
-  height: 346px;
+  // height: 346px;
   background-color: #fff;
   border-radius: 5px;
   // box-shadow: 5px 5px 2px rgb(0 0 0 / 25%);
   padding: 20px;
   cursor: pointer;
+  // margin-right: 20px;
+  margin-bottom: 30px;
+  // &:not(:last-child) {
+  //   margin-bottom: 20px;
+  // }
 }
 
 .sisters-help-item-text {
   text-align: center;
-  font-size: 15px;
+  // font-size: 15px;
   font-weight: 600;
-  margin-top: 20px;
+  color: #493340;
+  // margin-top: 20px;
 }
 
-.sisters-help-card-img-text {
-  margin-top: 50px;
-}
+// .sisters-help-card-img-text {
+//   margin-top: 50px;
+// }
 // .sisters-help-item {
 //   &:not(:last-child) {
 //     margin-bottom: 30px;
@@ -123,12 +129,19 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .sisters-help-card {
+    margin-bottom: 60px;
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
 }
 
-.sisters-lightbox {
-  display: flex;
-  justify-content: center;
-}
+// .sisters-lightbox {
+//   display: flex;
+//   justify-content: center;
+// }
 // carousel
 // .carousel-container {
 //   position: relative;

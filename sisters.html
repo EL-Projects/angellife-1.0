@@ -15,14 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
@@ -212,324 +206,172 @@
     <section class="section">
       <div class="sisters-background-color container">
         <h2 class="sisters-help-title">Ми допомагаємо</h2>
-<div class="sisters-lightbox">
-        <!-- Preview images -->
-        <!-- Preview images -->
-        <div class="preview-images">
-          <img class="sisters-lightbox-card"
-            src="./images/main-new.jpg"
-            alt="Preview Image 1"
-            onclick="openLightbox(1)"
-          />
-          <img class="sisters-lightbox-card"
-            src="./images/sisters.jpg"
-            alt="Preview Image 2"
-            onclick="openLightbox(2)"
-          />
-          <img class="sisters-lightbox-card"
-            src="./images/main.jpg"
-            alt="Preview Image 3"
-            onclick="openLightbox(3)"
-          />
-          <div class="preview-images">
-          <div class="sisters-help-card">
-                  <img class="sisters-lightbox-card"
-                    class="sisters-help-card-img-text"
-                    src="./images/1.png"
-                    alt=""
-                    width="200px" onclick="openLightbox(1)"/>
-        
-                  <p class="sisters-help-item-text">Тяжкохворим</p>
-                </div>
-           
-          
-          <!-- Add more preview images here -->
-        </div>
-</div>
-        <!-- Lightboxes -->
-        <div id="lightbox-container">
-          <div class="lightbox" id="lightbox-1">
-            <span class="close-button" onclick="closeLightbox(1)">&times;</span>
-            <span class="arrow left" onclick="prevImage(1)">&#10094;</span>
-            <span class="arrow right" onclick="nextImage(1)">&#10095;</span>
-            <div class="lightbox-content">
-              <img id="lightbox-img-1" src="" alt="Image 1" />
-            </div>
-          </div>
-
-          <div class="lightbox" id="lightbox-2">
-            <span class="close-button" onclick="closeLightbox(2)">&times;</span>
-            <span class="arrow left" onclick="prevImage(2)">&#10094;</span>
-            <span class="arrow right" onclick="nextImage(2)">&#10095;</span>
-            <div class="lightbox-content">
-              <img id="lightbox-img-2" src="" alt="Image 2" />
-            </div>
-          </div>
-
-          <div class="lightbox" id="lightbox-3">
-            <span class="close-button" onclick="closeLightbox(3)">&times;</span>
-            <span class="arrow left" onclick="prevImage(3)">&#10094;</span>
-            <span class="arrow right" onclick="nextImage(3)">&#10095;</span>
-            <div class="lightbox-content">
-              <img id="lightbox-img-3" src="" alt="Image 3" />
-            </div>
-          </div>
-          <div class="lightbox" id="lightbox-3">
-            <span class="close-button" onclick="closeLightbox(3)">&times;</span>
-            <span class="arrow left" onclick="prevImage(3)">&#10094;</span>
-            <span class="arrow right" onclick="nextImage(3)">&#10095;</span>
-            <div class="lightbox-content">
-              <img id="lightbox-img-3" src="" alt="Image 3" />
-            </div>
-          </div>
-
-          <!-- Add more lightboxes as needed -->
-        </div>
-        <!-- <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="">
-                <div class="sisters-help-card">
+<div class="sisters-gallery">
+      <div class="sisters-help-card">
+        <a class="sisters-gallery-link link" href="./images/1/1.jpg" data-fancybox="gallery1"
+          ><div class="">
                   <img
                     class="sisters-help-card-img-text"
                     src="./images/1.png"
                     alt=""
                     width="200px"
                   />
-                  <p class="sisters-help-item-text">Тяжкохворим</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/main-savelife-edited.png" alt="" />
-            </div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <div class="swiper mySwiper1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="carousel-item">
-                <div class="sisters-help-card">
-                  <img
-                    class="sisters-help-card-img-text"
-                    src="./images/5.png"
-                    alt=""
-                    width="200px"
-                  />
-                  <p class="sisters-help-item-text">Воїнам ЗСУ</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <div class="swiper mySwiper2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="carousel-item">
-                <div class="sisters-help-card">
+                  <p class="sisters-help-item-text link">Тяжкохворим</p>
+                </div></a>
+        <a
+          href="./images/1/2.jpg"
+          data-fancybox="gallery1"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/1/3.jpg"
+          data-fancybox="gallery1"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/1/4.jpg
+          data-fancybox="gallery1"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/1/5.jpg"
+          data-fancybox="gallery1"
+          style="display: none"
+        ></a>
+      </div>
+
+      <div class="sisters-help-card">
+        <a class="sisters-gallery-link link" href="./images/1/1.jpg" data-fancybox="gallery2"
+          ><div class="">
                   <img
                     class="sisters-help-card-img-text"
                     src="./images/2.png"
                     alt=""
                     width="200px"
                   />
-                  <p class="sisters-help-item-text">Безхатнім людям</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <div class="swiper mySwiper3">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="carousel-item">
-                <div class="sisters-help-card">
+                  <p class="sisters-help-item-text link">Воїнам ЗСУ</p>
+                </div></a>
+        <a
+          href="./images/2/2.jpg"
+          data-fancybox="gallery2"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/2/3.jpg"
+          data-fancybox="gallery2"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/2/4.jpg"
+          data-fancybox="gallery2"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/2/5.jpg"
+          data-fancybox="gallery2"
+          style="display: none"
+        ></a>
+      </div>
+
+
+      <div class="sisters-help-card">
+        <a class="sisters-gallery-link link" href="./images/3/1.jpg" data-fancybox="gallery3"
+          ><div class="">
                   <img
                     class="sisters-help-card-img-text"
                     src="./images/3.png"
                     alt=""
                     width="200px"
                   />
-                  <p class="sisters-help-item-text">Літнім людям</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <div class="swiper mySwiper4">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="carousel-item">
-                <div class="sisters-help-card">
+                  <p class="sisters-help-item-text link">Безхатнім людям</p>
+                </div></a>
+        <a
+          href="./images/3/2.jpg"
+          data-fancybox="gallery3"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/3/3.jpg"
+          data-fancybox="gallery3"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/3/4.jpg"
+          data-fancybox="gallery3"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/3/5.jpg"
+          data-fancybox="gallery3"
+          style="display: none"
+        ></a>
+      </div>
+      <div class="sisters-help-card">
+        <a class="sisters-gallery-link link" href="./images/4/1.jpg" data-fancybox="gallery4"
+          ><div class="">
                   <img
                     class="sisters-help-card-img-text"
                     src="./images/4.png"
                     alt=""
                     width="200px"
                   />
-                  <p class="sisters-help-item-text">Дітям</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/child-help-1.jpg" alt="" />
-            </div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div> -->
-
-        <!-- <div>
-          <ul class="sisters-help-list list">
-            <li class="sisters-help-item">
-              <div class="carousel-container">
-                <div class="carousel" id="carousel1">
-                  <div class="carousel-item">
-                    <div class="sisters-help-card">
-                      <a href="#"
-                        ><img src="./images/1.png" alt="" width="200px"
-                      /></a>
-                      <p class="sisters-help-item-text">Тяжкохворим</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">Item 2</div>
-                  <div class="carousel-item">Item 3</div>
-                  <div class="carousel-item">Item 4</div>
-                  <div class="carousel-item">Item 5</div>
-                </div>
-                <button class="prev-btn sisters-carousel-button">&lt;</button>
-                <button class="next-btn sisters-carousel-button">&gt;</button>
-              </div>
-            </li>
-            <li class="sisters-help-item">
-              <div class="carousel-container">
-                <div class="carousel" id="carousel2">
-                  <div class="carousel-item">
-                    <div class="sisters-help-card">
-                      <a href="#"
-                        ><img src="./images/5.png" alt="" width="200px"
-                      /></a>
-                      <p class="sisters-help-item-text">Воїнам ЗСУ</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">Item 2</div>
-                  <div class="carousel-item">Item 3</div>
-                  <div class="carousel-item">Item 4</div>
-                  <div class="carousel-item">Item 5</div>
-                </div>
-                <button class="prev-btn sisters-carousel-button">&lt;</button>
-                <button class="next-btn sisters-carousel-button">&gt;</button>
-              </div>
-            </li>
-            <li class="sisters-help-item">
-              <div class="carousel-container">
-                <div class="carousel" id="carousel3">
-                  <div class="carousel-item">
-                    <div class="sisters-help-card">
-                      <a href="#"
-                        ><img src="./images/2.png" alt="" width="200px"
-                      /></a>
-                      <p class="sisters-help-item-text">Безхатнім людям</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">Item 2</div>
-                  <div class="carousel-item">Item 3</div>
-                  <div class="carousel-item">Item 4</div>
-                  <div class="carousel-item">Item 5</div>
-                </div>
-                <button class="prev-btn sisters-carousel-button">&lt;</button>
-                <button class="next-btn sisters-carousel-button">&gt;</button>
-              </div>
-            </li>
-            <li class="sisters-help-item">
-              <div class="carousel-container">
-                <div class="carousel" id="carousel4">
-                  <div class="carousel-item">
-                    <div class="sisters-help-card">
-                      <a href="#"
-                        ><img src="./images/3.png" alt="" width="200px"
-                      /></a>
-                      <p class="sisters-help-item-text">Літнім людям</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">Item 2</div>
-                  <div class="carousel-item">Item 3</div>
-                  <div class="carousel-item">Item 4</div>
-                  <div class="carousel-item">Item 5</div>
-                </div>
-                <button class="prev-btn sisters-carousel-button">&lt;</button>
-                <button class="next-btn sisters-carousel-button">&gt;</button>
-              </div>
-            </li>
-            <li class="sisters-help-item">
-              <div class="carousel-container">
-                <div class="carousel" id="carousel5">
-                  <div class="carousel-item">
-                    <div class="sisters-help-card">
-                      <a href="#"
-                        ><img src="./images/4.png" alt="" width="200px"
-                      /></a>
-                      <p class="sisters-help-item-text">Дітям</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">Item 2</div>
-                  <div class="carousel-item">Item 3</div>
-                  <div class="carousel-item">Item 4</div>
-                  <div class="carousel-item">Item 5</div>
-                </div>
-                <button class="prev-btn sisters-carousel-button">&lt;</button>
-                <button class="next-btn sisters-carousel-button">&gt;</button>
-              </div>
-            </li>
-          </ul>
-        </div> -->
+                  <p class="sisters-help-item-text link">Літнім людям</p>
+                </div></a>
+        <a
+          href="./images/4/2.jpg"
+          data-fancybox="gallery4"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/4/3.jpg"
+          data-fancybox="gallery4"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/4/4.jpg"
+          data-fancybox="gallery4"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/3/5.jpg"
+          data-fancybox="gallery4"
+          style="display: none"
+        ></a>
       </div>
+      <div class="sisters-help-card">
+        <a class="sisters-gallery-link link" href="./images/5/1.jpg" data-fancybox="gallery5"
+          ><div class="">
+                  <img
+                    class="sisters-help-card-img-text"
+                    src="./images/5.png"
+                    alt=""
+                    width="200px"
+                  />
+                  <p class="sisters-help-item-text link">Дітям</p>
+                </div></a>
+        <a
+          href="./images/5/2.jpg"
+          data-fancybox="gallery55"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/5/3.jpg"
+          data-fancybox="gallery5"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/5/4.jpg"
+          data-fancybox="gallery5"
+          style="display: none"
+        ></a>
+        <a
+          href="./images/5/5.jpg"
+          data-fancybox="gallery5"
+          style="display: none"
+        ></a>
+      </div>
+      <!-- Добавьте аналогичные блоки для остальных галерей -->
+    </div>
     </section>
     <!-- Footer -->
     <footer class="footer">
@@ -627,7 +469,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> -->
     <!-- <script src="./js/swiper.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./js/lightbox.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

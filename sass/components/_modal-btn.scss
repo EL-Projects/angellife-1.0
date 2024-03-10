@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -10,7 +10,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px 40px;
   z-index: 12;
-
+  @media screen and (min-width: 785px) {
+    top: 50%;
+  }
   @media screen and (max-width: 1199px) {
     max-width: 450px;
   }

@@ -49,7 +49,7 @@
               Гаряча лінія пидтримки майбутніх мам
             </p>
             <button class="header-donate-button btn" type="button">
-              Допомогти
+              <a class="header-donate-button-link link" href="#">Допомогти</a>
             </button>
           </div>
 
@@ -104,9 +104,7 @@
           </button>
           <ul class="mobile-menu-list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link current" href="./index.html"
-                >Головна</a
-              >
+              <a class="mobile-menu__link link" href="./index.html">Головна</a>
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="./save-life.html"
@@ -121,7 +119,7 @@
             </li>
 
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./volounters.html"
+              <a class="mobile-menu__link link current" href="./volounters.html"
                 >Волонтери</a
               >
             </li>
@@ -237,7 +235,11 @@
               </button>
             </li>
             <li>
-              <button class="footer-join-button btn" type="button">
+              <button
+                class="footer-join-button btn"
+                type="button"
+                data-modal-open
+              >
                 Приєднатись
               </button>
             </li>
@@ -346,6 +348,7 @@
                 pattern="[0-9()#&+*-=.]+"
                 placeholder="+380xxxxxxxxx"
                 title="+380xxxxxxxxxx"
+                required
               /><svg class="contact-form__icon" width="18px" height="18px">
                 <use href="./images/icons-addon.svg#icon-form-phone"></use>
               </svg>

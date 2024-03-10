@@ -12,3 +12,14 @@
   width: 200px; /* Размер миниатюры */
   height: auto;
 }
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .sisters-gallery {
+//     justify-content: space-around;
+//   }
+// }
+
+@media screen and (min-width: 1200px) {
+  .sisters-gallery {
+    justify-content: center;
+  }
+}

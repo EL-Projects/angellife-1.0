@@ -95,6 +95,20 @@
 //     margin-bottom: 30px;
 //   }
 // }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sisters-help-card {
+    margin-bottom: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+  }
+
+  .sisters-about-wrapper {
+    padding: 20px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .sisters-main {
@@ -131,10 +145,11 @@
   }
 
   .sisters-help-card {
+    margin-right: 80px;
     margin-bottom: 60px;
-    &:not(:last-child) {
-      margin-right: 80px;
-    }
+    // &:not(:last-child) {
+    //   margin-right: 80px;
+    // }
   }
 }
 

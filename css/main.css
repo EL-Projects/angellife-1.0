@@ -288,7 +288,7 @@ p {
   min-height: 50px;
   margin: auto;
   color: #fff;
-  background: green;
+  background: #499573;
   display: block;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -366,6 +366,7 @@ p {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px 40px;
+  z-index: 10;
 }
 @media screen and (max-width: 1199px) {
   .modal {
@@ -478,7 +479,7 @@ p {
   font-size: 18px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: #757575;
 }
 
 .mobile-menu-contacts__link-mail {
@@ -506,6 +507,11 @@ p {
   height: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .sisters-gallery {
+    justify-content: center;
+  }
+}
 .nav-link {
   color: #493340;
 }
@@ -1649,6 +1655,16 @@ p {
   color: #493340;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sisters-help-card {
+    margin-bottom: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .sisters-about-wrapper {
+    padding: 20px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .sisters-main {
     min-height: 700px;
@@ -1681,10 +1697,8 @@ p {
     margin-right: auto;
   }
   .sisters-help-card {
-    margin-bottom: 60px;
-  }
-  .sisters-help-card:not(:last-child) {
     margin-right: 80px;
+    margin-bottom: 60px;
   }
 }
 .sisters-carousel-button {

@@ -17,6 +17,11 @@
     />
   </head>
   <body>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+      <svg class="scrollToTopBtn">
+        <use href="./images/icons.svg#icon-up-arrow"></use>
+      </svg>
+    </button>
     <!-- Header -->
     <header class="header">
       <div class="header container">
@@ -89,7 +94,7 @@
                 <a class="nav-link link" href="./news.html">Новини</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link" href="">Контакти</a>
+                <a class="nav-link link" href="#contacts-id">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -127,7 +132,7 @@
               <a class="mobile-menu__link link" href="./news.html">Новини</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="#">Контакты</a>
+              <a class="mobile-menu__link link" href="#contacts-id">Контакты</a>
             </li>
           </ul>
 
@@ -167,51 +172,53 @@
         <h2 class="volounters-hero-title">
           Кожен має право на життя з моменту зачаття.
         </h2>
-        <div class="volounters-img">
-          <img
-            src="./images/volounters-text-img.png"
-            class="volounters-img"
-            alt=""
-          />
-        </div>
-        <div>
-          <ul class="volounters-list list">
-            <li class="volounters-item-background">
-              <p class="volounters-text">
-                Взяти участь у програмі може кожен охочий: професійні психологи,
-                беручи участь у консультуванні, добровольці, надаючи допомогу в
-                соціальному супроводі кризових вагітних, юристи через надання
-                нашим підопічним юридичної допомоги, а також будь-хто,
-                пожертвувавши продукти, дитячі та дорослі речі, кошти на
-                придбання предметів першої необхідності для наших особливо
-                нужденних підопічних.
-              </p>
-            </li>
-            <li class="volounters-item">
-              <p class="volounters-text">
-                <span class="volounters-text-bold"
-                  >Протиабортне консультування</span
-                >
-                - це надання кризовій вагітній повної інформації про аборт, його
-                наслідки, надання психологічноїта іншої допомоги.
-              </p>
-            </li>
-            <li class="volounters-item-background">
-              <p class="volounters-text">
-                <span class="volounters-text-bold">Мета консультування</span> -
-                допомогти зберегти вагітність, обрати життя. Проводиться за
-                телефонами довіри, у соціальних мережах, центрах допомоги.
-                Подібне консультування дуже важливе, бо досі велика кількість
-                абортів робиться через незнання, нерозуміння жінкою всіх його
-                негативних наслідків, а також через важкі матеріальні умови. Щоб
-                жінка змінила своє рішення і зберегла малюка, буває достатньо
-                грамотної консультації фахівця, щирого бажання допомогти їй
-                розв'язати внутрішні та/або сімейні проблеми, надання жінці
-                реальної підтримки продуктами, речами, предметами першої
-                необхідності.
-              </p>
-            </li>
-          </ul>
+        <div class="volounters-text-img-wrapper">
+          <div class="volounters-img">
+            <img
+              src="./images/volounters-text-img.png"
+              class="volounters-img"
+              alt=""
+            />
+          </div>
+          <div class="volunters-text-container">
+            <ul class="volounters-list list">
+              <li class="volounters-item-background">
+                <p class="volounters-text">
+                  Взяти участь у програмі може кожен охочий: професійні
+                  психологи, беручи участь у консультуванні, добровольці,
+                  надаючи допомогу в соціальному супроводі кризових вагітних,
+                  юристи через надання нашим підопічним юридичної допомоги, а
+                  також будь-хто, пожертвувавши продукти, дитячі та дорослі
+                  речі, кошти на придбання предметів першої необхідності для
+                  наших особливо нужденних підопічних.
+                </p>
+              </li>
+              <li class="volounters-item">
+                <p class="volounters-text">
+                  <span class="volounters-text-bold"
+                    >Протиабортне консультування</span
+                  >
+                  - це надання кризовій вагітній повної інформації про аборт,
+                  його наслідки, надання психологічноїта іншої допомоги.
+                </p>
+              </li>
+              <li class="volounters-item-background">
+                <p class="volounters-text">
+                  <span class="volounters-text-bold">Мета консультування</span>
+                  - допомогти зберегти вагітність, обрати життя. Проводиться за
+                  телефонами довіри, у соціальних мережах, центрах допомоги.
+                  Подібне консультування дуже важливе, бо досі велика кількість
+                  абортів робиться через незнання, нерозуміння жінкою всіх його
+                  негативних наслідків, а також через важкі матеріальні умови.
+                  Щоб жінка змінила своє рішення і зберегла малюка, буває
+                  достатньо грамотної консультації фахівця, щирого бажання
+                  допомогти їй розв'язати внутрішні та/або сімейні проблеми,
+                  надання жінці реальної підтримки продуктами, речами,
+                  предметами першої необхідності.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -406,5 +413,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/top-top.js"></script>
   </body>
 </html>

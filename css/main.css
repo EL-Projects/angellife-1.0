@@ -399,6 +399,7 @@ p {
   cursor: pointer;
   padding: 0;
   fill: #000;
+  z-index: 12;
 }
 
 .modal-close-btn-icon {
@@ -497,6 +498,50 @@ p {
   color: #757575;
 }
 
+#scrollToTopBtn {
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #007bff; /* Change to preferred color */
+  cursor: pointer;
+  fill: #493340;
+}
+
+#scrollToTopBtn:hover {
+  color: #0056b3; /* Change to preferred color on hover */
+}
+
+.scrollToTopBtn {
+  width: 0;
+  height: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #scrollToTopBtn {
+    bottom: 30px;
+    right: 30px;
+  }
+  .scrollToTopBtn {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #scrollToTopBtn {
+    bottom: 50px;
+    right: 80px;
+  }
+  .scrollToTopBtn {
+    width: 35px;
+    height: 35px;
+  }
+}
 .sisters-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -1817,6 +1862,54 @@ p {
 @media screen and (min-width: 1200px) {
   .volounters-main {
     min-height: 700px;
+  }
+  .volounters-text-img-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .volounters-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .volounters-img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .volunters-text-container {
+    display: flex;
+    justify-content: center;
+  }
+  .volounters-item-background {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+  }
+  .volounters-text {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .volunters-text-container {
+    display: flex;
+    justify-content: center;
+  }
+  .volounters-item-background {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    margin-bottom: 0;
+  }
+  .volounters-text {
+    max-width: 770px;
+  }
+  .volounters-img {
+    width: 65%;
+  }
+  .volounters-text-img-wrapper {
+    margin-bottom: 30px;
   }
 }
 .current {

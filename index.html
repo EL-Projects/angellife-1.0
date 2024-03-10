@@ -23,6 +23,12 @@
     />
   </head>
   <body>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+      <svg class="scrollToTopBtn">
+        <use href="./images/icons.svg#icon-up-arrow"></use>
+      </svg>
+    </button>
+
     <!-- Header -->
     <header class="header">
       <div class="header container">
@@ -93,7 +99,7 @@
                 <a class="nav-link link" href="./news.html">Новини</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link" href="">Контакти</a>
+                <a class="nav-link link" href="#contacts-id">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -329,7 +335,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-contacts">
+        <div class="footer-contacts" id="contacts-id">
           <h2 class="footer-contacts-subtitle">Контакти</h2>
           <address class="footer-contact-adress">
             <ul class="footer-contact-list list">
@@ -488,6 +494,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/top-top.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

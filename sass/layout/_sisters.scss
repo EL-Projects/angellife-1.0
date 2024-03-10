@@ -109,13 +109,17 @@
     padding: 20px;
   }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sisters-main {
+    min-height: 420px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .sisters-main {
     min-height: 700px;
   }
   .sisters-main-title {
-    padding-top: 400px;
+    padding-top: 300px;
     margin-bottom: 30px;
     display: flex;
     font-family: inherit;

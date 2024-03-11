@@ -76,6 +76,12 @@ p {
   font-weight: 700;
   font-style: normal;
 }
+.copyright-text {
+  font-size: 6px;
+  color: #ececec;
+  text-align: center;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;

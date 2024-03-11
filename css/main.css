@@ -189,6 +189,12 @@ p {
   pointer-events: none;
 }
 
+.main-donate-button-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;

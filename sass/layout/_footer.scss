@@ -139,6 +139,13 @@
   }
 }
 
+.copyright-text-back {
+  background-color: #775167;
+}
+.copyright-text {
+  color: #fff;
+}
+
 @media screen and (min-width: 1200px) {
   .footer {
     display: flex;
@@ -157,6 +164,6 @@
   .footer-donate-button {
     margin-top: 0;
   }
-  .footer-contacts-subtitle {
-  }
+  // .footer-contacts-subtitle {
+  // }
 }

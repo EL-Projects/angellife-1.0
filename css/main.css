@@ -1159,6 +1159,14 @@ p {
   margin-right: 10px;
 }
 
+.copyright-text-back {
+  background-color: #775167;
+}
+
+.copyright-text {
+  color: #fff;
+}
+
 @media screen and (min-width: 1200px) {
   .footer {
     display: flex;

@@ -1775,6 +1775,11 @@ p {
     margin-right: 20px;
     margin-bottom: 20px;
   }
+  .sisters-hero-img {
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
   .sisters-about-wrapper {
     padding: 20px;
   }
@@ -1785,6 +1790,11 @@ p {
   }
 }
 @media screen and (min-width: 1200px) {
+  .sisters-hero-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
   .sisters-main {
     min-height: 700px;
   }

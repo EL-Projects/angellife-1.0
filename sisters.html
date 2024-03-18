@@ -189,15 +189,27 @@
           Милосердя - почуття готовності надати безкорисливу допомогу.
         </h1>
         <div class="sisters-about-wrapper">
-          <img
-            srcset="
-              ./images/mobile/sisters-hero-m.png  480w,
-              ./images/sisters-hero.png          1024w
-            "
-            sizes="(max-width: 480px) 100vw"
-            src="./images/mobile/sisters-hero-m.png"
-            alt="Image"
-          />
+          <picture class="sisters-hero-img">
+            <!-- Для мобильных устройств -->
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/mobile/sisters-hero-m.png"
+              type="image/png"
+            />
+
+            <!-- Для устройств с шириной экрана от 768px и выше -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/sisters-hero.png"
+              type="image/jpeg"
+            />
+
+            <!-- Фallback для старых браузеров или устройств, не поддерживающих элемент <picture> -->
+            <img
+              src="./images/mobile/sisters-hero-m.png"
+              alt="Описание изображения"
+            />
+          </picture>
           <!-- <img class="mobile-image" src="./images/sisters-hero.png" alt="" /> -->
           <p class="sisters-about-text">
             <span class="sisters-about-text-bold">Мило-Сердя.</span> Вслухайтеся

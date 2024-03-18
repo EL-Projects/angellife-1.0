@@ -105,6 +105,11 @@
     //   margin-right: 30px;
     // }
   }
+  .sisters-hero-img {
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
 
   .sisters-about-wrapper {
     padding: 20px;
@@ -116,6 +121,11 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .sisters-hero-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
   .sisters-main {
     min-height: 700px;
   }

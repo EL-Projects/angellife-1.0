@@ -255,27 +255,51 @@
           </div>
         </div>
         <div class="save-life-motivation-img">
-          <img
-            srcset="
-              ./images/mobile/pregnant-voucher-1-m.jpg  480vw,
-              ./images/pregnant-voucher-1.jpg          1024w
-            "
-            sizes="100vw"
-            src="./images/mobile/pregnant-voucher-1-m.jpg"
-            alt=""
-          />
+          <picture>
+            <!-- Для мобильных устройств -->
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/mobile/pregnant-voucher-1-m.jpg"
+              type="image/jpeg"
+            />
+
+            <!-- Для устройств с шириной экрана от 768px и выше -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/pregnant-voucher-1.jpg"
+              type="image/jpeg"
+            />
+
+            <!-- Фallback для старых браузеров или устройств, не поддерживающих элемент <picture> -->
+            <img
+              src="./images/mobile/pregnant-voucher-1-m.jpg"
+              alt="Описание изображения"
+            />
+          </picture>
         </div>
 
         <div class="save-life-motivation-img">
-          <img
-            srcset="
-              ./images/mobile/pregnant-voucher-2-m.jpg  480w,
-              ./images/pregnant-voucher-2.jpg          1024w
-            "
-            sizes="100vw"
-            src="./images/mobile/pregnant-voucher-2-m.jpg"
-            alt=""
-          />
+          <picture>
+            <!-- Для мобильных устройств -->
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/mobile/pregnant-voucher-2-m.jpg"
+              type="image/jpeg"
+            />
+
+            <!-- Для устройств с шириной экрана от 768px и выше -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/pregnant-voucher-2.jpg"
+              type="image/jpeg"
+            />
+
+            <!-- Фallback для старых браузеров или устройств, не поддерживающих элемент <picture> -->
+            <img
+              src="./images/mobile/pregnant-voucher-2-m.jpg"
+              alt="Описание изображения"
+            />
+          </picture>
         </div>
         <div class="save-life-save-extra-text-wrapper">
           <p class="save-life-save-extra-text">

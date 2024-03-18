@@ -82,6 +82,7 @@ p {
   text-align: center;
 }
 
+/* Скрыть изображение для десктопных устройств (после 480px) */
 .container {
   width: 100%;
   padding-right: 15px;
@@ -104,6 +105,40 @@ p {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .general-main {
+    background-image: url(./../../images/mobile/main-m.jpg); /* Изображение для мобильных устройств */
+  }
+  .save-life-main {
+    background-image: url(./../../images/mobile/save-life-m.jpg); /* Изображение для мобильных устройств */
+  }
+  .sisters-main {
+    background-image: url(./../../images/mobile/sisters-m.jpg); /* Изображение для мобильных устройств */
+  }
+  .volounters-main {
+    background-image: url(./../../images/mobile/volounters-m.jpg); /* Изображение для мобильных устройств */
+  }
+  .news-main {
+    background-image: url(./../../images/mobile/news-m.jpg); /* Изображение для мобильных устройств */
+  }
+}
+@media screen and (min-width: 481px) {
+  .general-main {
+    background-image: url(./../../images/main.jpg); /* Изображение для мобильных устройств */
+  }
+  .save-life-main {
+    background-image: url(./../../images/ave-life.jpg); /* Изображение для мобильных устройств */
+  }
+  .sisters-main {
+    background-image: url(./../../images/sisters.jpg); /* Изображение для мобильных устройств */
+  }
+  .volounters-main {
+    background-image: url(./../../images/volounters.jpg); /* Изображение для мобильных устройств */
+  }
+  .news-main {
+    background-image: url(./../../images/news.jpg); /* Изображение для мобильных устройств */
+  }
+}
 @media screen and (min-width: 768px) {
   .dropdown {
     display: inline-block;
@@ -1143,7 +1178,6 @@ p {
   }
 }
 .general-main {
-  background-image: url(./../images/main-new.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1477,7 +1511,6 @@ p {
   }
 }
 .save-life-main {
-  background-image: url(./../images/save-life.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1655,7 +1688,6 @@ p {
   }
 }
 .sisters-main {
-  background-image: url(./../images/sisters.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1831,7 +1863,6 @@ p {
 }
 
 .volounters-main {
-  background-image: url(./../images/volounters.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1965,7 +1996,6 @@ p {
   }
 }
 .news-main {
-  background-image: url(./../images/news.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;

@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;," />
   </head>
   <body>
     <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
@@ -36,12 +36,7 @@
         <!-- Logo and text -->
         <div class="header-logo">
           <a class="link" href="./index.html"
-            ><img
-              class="header-logo-img"
-              src="./images/logo.png"
-              alt=""
-              width="55px"
-              height="55px"
+            ><img src="./images/logo.png" alt="" width="55px" height="55px"
           /></a>
           <p class="header-main-text">
             Подаруй дитині <br />
@@ -202,7 +197,13 @@
         </h2>
         <div class="general-hero-picture-and-text-wrapper">
           <div class="general-hero-img-container">
-            <img class="general-hero-img" src="./images/hero.jpg" alt="" />
+            <img
+              class="general-hero-img"
+              srcset="./images/mobile/hero-m.jpg 480w, ./images/hero.jpg 1024w"
+              sizes="(max-width: 480px) 100vw"
+              src="./images/mobile/hero-m.jpg"
+              alt=""
+            />
           </div>
           <div class="general-hero-text-container">
             <p class="general-hero-text">

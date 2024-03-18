@@ -181,7 +181,13 @@
         <div class="volounters-text-img-wrapper">
           <div class="volounters-img">
             <img
-              src="./images/volounters-text-img.png"
+              srcset="
+                ./images/mobile/volounters-text-img-m.png  480w,
+                ./images/volounters-text-img.png          1024w
+              "
+              sizes="(max-width: 480px) 100vw
+            "
+              src="./images/mobile/volounters-text-img-m.png"
               class="volounters-img"
               alt=""
             />

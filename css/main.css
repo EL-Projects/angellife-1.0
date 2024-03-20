@@ -82,7 +82,11 @@ p {
   text-align: center;
 }
 
-/* Скрыть изображение для десктопных устройств (после 480px) */
+@supports (-webkit-appearance: none) {
+  * {
+    -webkit-min-device-pixel-ratio: 0;
+  }
+}
 .container {
   width: 100%;
   padding-right: 15px;
@@ -231,6 +235,7 @@ p {
   color: #fff;
 }
 
+/* Ваши стили здесь */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -1022,6 +1027,7 @@ p {
     color: #fff;
   }
 }
+/* Ваши стили здесь */
 .footer {
   background-color: #775167;
 }

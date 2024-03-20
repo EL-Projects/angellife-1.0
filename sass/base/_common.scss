@@ -87,26 +87,9 @@ p {
   color: #ececec;
   text-align: center;
 }
-// @font-face {
-//   font-family: "involveregular";
-//   src: url("../../fonts/involve-vf-webfont.woff2") format("woff2"),
-//     url("../../fonts/involve-vf-webfont.woff.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
-
-
-/* Скрыть изображение для десктопных устройств (после 480px) */
-// @media screen and (min-width: 481px) {
-//   .mobile-image {
-//     display: none;
-//   }
-// }
-
-// /* Скрыть изображение для мобильных устройств (до 480px) */
-// @media screen and (max-width: 480px) {
-//   .desktop-image {
-//     display: none;
-//   }
-// }
+@supports (-webkit-appearance: none) {
+  * {
+    -webkit-min-device-pixel-ratio: 0;
+  }
+}

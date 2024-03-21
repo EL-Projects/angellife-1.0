@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Настройки письма
         $mail->setFrom($email, $name);
-        $mail->addAddress('angellife.kyiv@gmail.com'); // Адрес получателя
+        $mail->addAddress('elukjanskis@gmail.com'); // Адрес получателя
         $mail->Subject = 'Новое сообщение из формы обратной связи';
         $mail->Body = "Имя: $name\nТелефон: $phone\nEmail: $email\n\nКомментарий:\n$comment";
 

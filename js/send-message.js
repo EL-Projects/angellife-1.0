@@ -1,4 +1,4 @@
-// Check for success query parameter in the URL
+// JavaScript to display and close success message in a pop-up window
 const urlParams = new URLSearchParams(window.location.search);
 const success = urlParams.get("success");
 
@@ -6,9 +6,15 @@ const success = urlParams.get("success");
 if (success === "1") {
   document.getElementById("success-message").style.display = "block";
 
-  // Close the success popup after 3 seconds
+  // Close the success popup after 4 seconds
   setTimeout(function () {
     document.getElementById("success-message").style.display = "none";
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }, 3000);
+    // Remove the query parameter from the URL
+    if (history.replaceState) {
+      const cleanURL =
+        window.location.pathname +
+        window.location.search.replace(/\?success=1/, "");
+      window.history.replaceState({}, document.title, cleanURL);
+    }
+  }, 4000);
 }

@@ -34,8 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body = "Имя: $name\nТелефон: $phone\nEmail: $email\n\nКомментарий:\n$comment";
 
         // Отправляем письмо
-        $mail->send();
-        echo 'Ваше сообщение было успешно отправлено!';
+        $mail->send();        header("Location: index.html");
+        exit;
     } catch (Exception $e) {
         echo "Ошибка при отправке сообщения: {$mail->ErrorInfo}";
     }

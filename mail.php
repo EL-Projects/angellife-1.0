@@ -8,6 +8,9 @@ require 'phpMailer/SMTP.php';
 
 mb_internal_encoding("UTF-8");
 
+// Создаем ассоциативный массив для ответа
+$response = array('success' => false, 'message' => '');
+
 // Проверяем, была ли отправлена форма
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Получаем данные из формы
@@ -30,21 +33,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         // Настройки письма
-        $mail->CharSet = $mail::CHARSET_UTF8; 
+        $mail->CharSet = $mail::CHARSET_UTF8;
         $mail->setFrom($email, $name);
         $mail->addAddress('angellife.kyiv@gmail.com'); // Адрес получателя
         $mail->Subject = 'angellife.kyiv.ua';
         $mail->Body = "Ім'я: $name\nТелефон: $phone\nПошта: $email\n\nКоментар:\n$comment";
 
         // Отправляем письмо
-        $mail->send();        header("Location: index.html");
-        exit;
+        $mail->send();
+        
+        // echo '<p>Почта успешно отправлена!</p>';
+header("Location: index.html?success=1");
+exit();
+        // Ждем 3 секунды и перенаправляем пользователя на главную страницу
+        
     } catch (Exception $e) {
+        // Записываем сообщение об ошибке в файл журнала
+        error_log("Ошибка при отправке сообщения: {$mail->ErrorInfo}");
+
+        // Выводим сообщение об ошибке на экран
         echo "Ошибка при отправке сообщения: {$mail->ErrorInfo}";
     }
 } else {
     // Если форма не была отправлена, вы можете сделать здесь что-то еще, например, перенаправить пользователя на другую страницу
     // header("Location: другая_страница.php");
     // exit;
-
 }

@@ -446,7 +446,13 @@
           </svg>
         </button>
         <p class="contact-form-text">Залиште свої дані, ми вам передзвонимо</p>
-        <form form class="contact-form" method="POST" action="mail.php">
+        <form
+          form
+          class="contact-form"
+          method="POST"
+          action="mail.php"
+          id="contact-form"
+        >
           <label class="contact-form__field" for="contact_name">
             <span class="contact-form__span">Ім'я</span>
             <span class="contact-input-span">
@@ -533,6 +539,10 @@
         </form>
       </div>
     </div>
+    <div id="success-message" class="success-message">
+      Пошта успішно відправлена!
+    </div>
+    <script src="./js/send-message.js"></script>
     <script src="./js/top-top.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

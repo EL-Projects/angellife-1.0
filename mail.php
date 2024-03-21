@@ -24,17 +24,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'elukjanskis@gmail.com'; // Ваш адрес электронной почты Gmail
-        $mail->Password = 'wydecgbthkogfwwq'; // Ваш пароль приложения Gmail
+        $mail->Username = 'angellife.kyiv@gmail.com'; // Ваш адрес электронной почты Gmail
+        $mail->Password = 'mmyqhambhywaokhh'; // Ваш пароль приложения Gmail
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
         // Настройки письма
         $mail->CharSet = $mail::CHARSET_UTF8; 
         $mail->setFrom($email, $name);
-        $mail->addAddress('elukjanskis@gmail.com'); // Адрес получателя
+        $mail->addAddress('angellife.kyiv@gmail.com'); // Адрес получателя
         $mail->Subject = 'angellife.kyiv.ua';
-        $mail->Body = "Имя: $name\nТелефон: $phone\nEmail: $email\n\nКомментарий:\n$comment";
+        $mail->Body = "Ім'я: $name\nТелефон: $phone\nПошта: $email\n\nКоментар:\n$comment";
 
         // Отправляем письмо
         $mail->send();        header("Location: index.html");

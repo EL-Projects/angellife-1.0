@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'elukjanskis@gmail.com'; // Ваш адрес электронной почты Gmail
-        $mail->Password = 'wyde cgbt hkog fwwq'; // Ваш пароль приложения Gmail
+        $mail->Password = 'wydecgbthkogfwwq'; // Ваш пароль приложения Gmail
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 

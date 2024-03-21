@@ -88,8 +88,16 @@ p {
   text-align: center;
 }
 
-@supports (-webkit-appearance: none) {
-  * {
+// @supports (-webkit-appearance: none) {
+//   * {
+//   }
+// }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Ваши стили здесь */
+
+  html {
     -webkit-min-device-pixel-ratio: 0;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 }

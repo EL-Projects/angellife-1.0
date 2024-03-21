@@ -9,5 +9,6 @@ if (success === "1") {
   // Close the success popup after 3 seconds
   setTimeout(function () {
     document.getElementById("success-message").style.display = "none";
-  }, 4000);
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }, 3000);
 }

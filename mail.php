@@ -6,6 +6,8 @@ require 'phpMailer/Exception.php';
 require 'phpMailer/PHPMailer.php';
 require 'phpMailer/SMTP.php';
 
+mb_internal_encoding("UTF-8");
+
 // Проверяем, была ли отправлена форма
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Получаем данные из формы
@@ -28,9 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         // Настройки письма
+        $mail->CharSet = $mail::CHARSET_UTF8; 
         $mail->setFrom($email, $name);
         $mail->addAddress('elukjanskis@gmail.com'); // Адрес получателя
-        $mail->Subject = 'Новое сообщение из формы обратной связи';
+        $mail->Subject = 'angellife.kyiv.ua';
         $mail->Body = "Имя: $name\nТелефон: $phone\nEmail: $email\n\nКомментарий:\n$comment";
 
         // Отправляем письмо

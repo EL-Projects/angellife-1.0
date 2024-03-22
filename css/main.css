@@ -1397,6 +1397,8 @@ p {
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .general-hero-img {
     border-radius: 5px;
@@ -1427,11 +1429,8 @@ p {
     display: flex;
     flex-direction: row;
   }
-  .general-hero-text-container {
-    width: 50%;
-  }
   .general-hero-img-container {
-    width: 50%;
+    width: 60%;
   }
   .help-background-color {
     background-color: #d9d9d9;

@@ -1,7 +1,5 @@
 // Contact form
 
-/* Ваши стили здесь */
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -121,8 +119,8 @@
 
   &:hover,
   &:focus {
-    background-color: var(--button-accent-color);
-    color: var(--white-color);
+    background-color: #499555;
+    color: #fff;
   }
 }
 
@@ -145,7 +143,7 @@
 }
 
 .contact-form-checkbox__input:checked + .contact-form-checkbox-icon {
-  background-color: #212121;
+  background-color: #3d7097;
   background-image: url(../images/icon-check.svg);
   background-origin: border-box;
   background-position: center;
@@ -156,7 +154,7 @@
 
 .contact-form-checkbox__input:hover + .contact-form-checkbox-icon,
 .contact-form-checkbox__input:focus + .contact-form-checkbox-icon {
-  border-color: azure;
+  border-color: #3d7097;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -181,6 +179,7 @@
   color: #000;
   text-decoration-line: underline;
 }
+// success-message
 .success-message {
   font-size: 20px;
   position: fixed;

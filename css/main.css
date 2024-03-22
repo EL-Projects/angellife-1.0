@@ -238,7 +238,6 @@ p {
   color: #fff;
 }
 
-/* Ваши стили здесь */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -353,8 +352,8 @@ p {
   cursor: pointer;
 }
 .contact-form__button:hover, .contact-form__button:focus {
-  background-color: var(--button-accent-color);
-  color: var(--white-color);
+  background-color: #499555;
+  color: #fff;
 }
 
 .contact-form-checkbox__label {
@@ -375,7 +374,7 @@ p {
 }
 
 .contact-form-checkbox__input:checked + .contact-form-checkbox-icon {
-  background-color: #212121;
+  background-color: #3d7097;
   background-image: url(../images/icon-check.svg);
   background-origin: border-box;
   background-position: center;
@@ -386,7 +385,7 @@ p {
 
 .contact-form-checkbox__input:hover + .contact-form-checkbox-icon,
 .contact-form-checkbox__input:focus + .contact-form-checkbox-icon {
-  border-color: azure;
+  border-color: #3d7097;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -479,7 +478,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover .modal-close-btn-icon, .modal-close-btn:focus .modal-close-btn-icon {
-  fill: #000;
+  fill: #3d7097;
 }
 
 .mobile-menu {
@@ -515,7 +514,7 @@ p {
   fill: #493340;
 }
 .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
-  fill: #2196f3;
+  fill: #3d7097;
 }
 
 .mobile-menu__item {
@@ -534,7 +533,7 @@ p {
   color: #493340;
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
-  color: #2196f3;
+  color: #3d7097;
 }
 .mobile-menu__link.current {
   color: #3d7097;
@@ -590,7 +589,7 @@ p {
 }
 
 #scrollToTopBtn:hover {
-  color: #0056b3; /* Change to preferred color on hover */
+  fill: #fff; /* Change to preferred color on hover */
 }
 
 .scrollToTopBtn {
@@ -629,7 +628,7 @@ p {
 }
 
 .gallery img {
-  width: 200px; /* Размер миниатюры */
+  width: 200px;
   height: auto;
 }
 
@@ -747,8 +746,8 @@ p {
 
 .header-call-button-text {
   font-family: inherit;
-  font-weight: 400;
-  font-size: 6px;
+  font-weight: 500;
+  font-size: 10px;
   line-height: 1.87;
   text-align: center;
 }
@@ -800,7 +799,7 @@ p {
     white-space: nowrap;
   }
   .header-call-button:hover, .header-call-button:focus {
-    background-color: #e73042;
+    background-color: #e62034;
   }
   .header-call-button-link {
     font-family: inherit;
@@ -811,8 +810,8 @@ p {
   }
   .header-call-button-text {
     font-family: inherit;
-    font-weight: 400;
-    font-size: 6px;
+    font-weight: 500;
+    font-size: 10px;
     line-height: 1.87;
     text-align: center;
     white-space: nowrap;
@@ -937,7 +936,7 @@ p {
     white-space: nowrap;
   }
   .header-call-button:hover, .header-call-button:focus {
-    background-color: #3d7097;
+    background-color: #e62034;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
   }
   .header-call-button-link {
@@ -950,8 +949,8 @@ p {
   }
   .header-call-button-text {
     font-family: inherit;
-    font-weight: 400;
-    font-size: 10px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 1.87;
     text-align: center;
     white-space: nowrap;
@@ -977,7 +976,7 @@ p {
     color: #ffffff;
   }
   .header-donate-button:hover, .header-donate-button:focus {
-    background-color: #3d7097;
+    background-color: #1f72cc;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
   }
   .header-call-button-link {
@@ -1045,7 +1044,6 @@ p {
     color: #fff;
   }
 }
-/* Ваши стили здесь */
 .footer {
   background-color: #775167;
 }
@@ -1092,7 +1090,7 @@ p {
   white-space: nowrap;
 }
 .footer-donate-button:hover, .footer-donate-button:focus {
-  background-color: #3d7097;
+  background-color: #1f72cc;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -1118,7 +1116,7 @@ p {
   white-space: nowrap;
 }
 .footer-join-button:hover, .footer-join-button:focus {
-  background-color: #3d7097;
+  background-color: #499555;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -1233,21 +1231,17 @@ p {
   color: #fff;
 }
 
+.general-main-text {
+  margin-bottom: 10px;
+}
+
 .general-main-text-block {
   font-family: inherit;
   font-size: 15px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   color: #493340;
   margin-bottom: 20px;
-}
-
-.general-main-text-bold {
-  font-weight: 600;
-}
-
-.general-main-text {
-  margin-bottom: 10px;
 }
 
 .general-hero-subtitle {
@@ -1314,10 +1308,6 @@ p {
   margin-bottom: 20px;
 }
 
-.general-help-text-bold {
-  font-weight: 600;
-}
-
 .general-help-text {
   font-family: inherit;
   font-size: 15px;
@@ -1330,6 +1320,10 @@ p {
   border-radius: 5px;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
   padding: 10px;
+}
+
+.general-help-text-bold {
+  font-weight: 600;
 }
 
 .general-help-item {
@@ -1429,9 +1423,6 @@ p {
   }
   .general-help-list {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-evenly; */
-    /* align-content: center; */
     flex-direction: row;
   }
   .general-hero-text-container {
@@ -1478,8 +1469,6 @@ p {
   }
   .general-help-list {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
     flex-direction: row;
     margin-top: 50px;
   }
@@ -1890,6 +1879,17 @@ p {
   right: 0;
 }
 
+.volounters-main {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 320px;
+}
+
 .main-join-button {
   min-width: 100px;
   margin-left: auto;
@@ -1914,16 +1914,9 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 4;
 }
-
-.volounters-main {
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  width: 100%;
-  margin: 0 auto;
-  min-height: 320px;
+.main-join-button:hover, .main-join-button:focus {
+  background-color: #499555;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .volounters-main-title {
@@ -2075,7 +2068,7 @@ p {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px;
   background-color: #d9d9d9;
 }
 
@@ -2117,7 +2110,7 @@ p {
 
 .news-text {
   margin-bottom: 0;
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px;
   background-color: #afcdcd;
   border-radius: 5px;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);

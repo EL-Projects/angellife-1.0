@@ -49,9 +49,7 @@
               >
             </button>
 
-            <p class="header-call-button-text">
-              Гаряча лінія пидтримки майбутніх мам
-            </p>
+            <p class="header-call-button-text">Гаряча лінія пидтримки</p>
             <button class="header-donate-button btn" type="button">
               <a
                 class="header-donate-button-link link"
@@ -326,7 +324,13 @@
           </svg>
         </button>
         <p class="contact-form-text">Залиште свої дані, ми вам передзвонимо</p>
-        <form form class="contact-form" method="POST" action="mail.php">
+        <form
+          form
+          class="contact-form"
+          method="POST"
+          action="mail.php"
+          id="contact-form"
+        >
           <label class="contact-form__field" for="contact_name">
             <span class="contact-form__span">Ім'я</span>
             <span class="contact-input-span">
@@ -403,17 +407,15 @@
 
             <span class="contact-form-checkbox__text">
               Згоден надіслати свої дані&nbsp;
-
-              <!-- <a class="contact-form-checkbox__link link" href=""
-                >Условия договора</a
-              > -->
             </span></label
           >
           <button class="contact-form__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
-    <script src="./js/hide_extension.js"></script>
+    <div id="success-message" class="success-message">
+      Анкета успішно відправлена!
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/top-top.js"></script>

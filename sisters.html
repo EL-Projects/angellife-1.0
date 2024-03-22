@@ -54,9 +54,7 @@
               >
             </button>
 
-            <p class="header-call-button-text">
-              Гаряча лінія пидтримки майбутніх мам
-            </p>
+            <p class="header-call-button-text">Гаряча лінія пидтримки</p>
             <button class="header-donate-button btn" type="button">
               <a
                 class="header-donate-button-link link"
@@ -196,21 +194,16 @@
               srcset="./images/mobile/sisters-hero-m.png"
               type="image/png"
             />
-
-            <!-- Для устройств с шириной экрана от 768px и выше -->
             <source
               media="(min-width: 768px)"
               srcset="./images/sisters-hero.png"
               type="image/jpeg"
             />
-
-            <!-- Фallback для старых браузеров или устройств, не поддерживающих элемент <picture> -->
             <img
               src="./images/mobile/sisters-hero-m.png"
               alt="Описание изображения"
             />
           </picture>
-          <!-- <img class="mobile-image" src="./images/sisters-hero.png" alt="" /> -->
           <p class="sisters-about-text">
             <span class="sisters-about-text-bold">Мило-Сердя.</span> Вслухайтеся
             в це слово! Що воно означає? Чуйне, ніжне серце, що чує і розділяє
@@ -613,9 +606,11 @@
             </ul>
           </div>
         </div>
-        <p class="copyright-text">2024 EL-Projects</p>
       </div>
     </footer>
+    <div class="copyright-text-back">
+      <p class="copyright-text">2024 EL-Projects</p>
+    </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" data-modal-close>
@@ -624,7 +619,13 @@
           </svg>
         </button>
         <p class="contact-form-text">Залиште свої дані, ми вам передзвонимо</p>
-        <form form class="contact-form" method="POST" action="mail.php">
+        <form
+          form
+          class="contact-form"
+          method="POST"
+          action="mail.php"
+          id="contact-form"
+        >
           <label class="contact-form__field" for="contact_name">
             <span class="contact-form__span">Ім'я</span>
             <span class="contact-input-span">
@@ -701,20 +702,19 @@
 
             <span class="contact-form-checkbox__text">
               Згоден надіслати свої дані&nbsp;
-
-              <!-- <a class="contact-form-checkbox__link link" href=""
-                >Условия договора</a
-              > -->
             </span></label
           >
           <button class="contact-form__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
+    <div id="success-message" class="success-message">
+      Анкета успішно відправлена!
+    </div>
+    <script src="./js/send-message.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="./js/hide_extension.js"></script>
     <script src="./js/lightbox.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

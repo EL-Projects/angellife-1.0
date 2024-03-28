@@ -2197,7 +2197,8 @@ p {
 .news {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-top: 20px;
   background-color: #d9d9d9;
 }
@@ -2240,7 +2241,7 @@ p {
 
 .news-text {
   margin-bottom: 0;
-  padding: 10px;
+  padding: 20px;
   background-color: #afcdcd;
   border-radius: 5px;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
@@ -2248,7 +2249,7 @@ p {
 
 .news-only-text {
   margin-bottom: 0;
-  padding: 15px;
+  padding: 20px;
   background-color: #afcdcd;
   border-radius: 5px;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);

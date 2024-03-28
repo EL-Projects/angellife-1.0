@@ -1219,7 +1219,7 @@ p {
 .footer-contact__mail-link:focus,
 .footer-contact__tel-link:hover,
 .footer-contact__tel-link:focus {
-  color: #afcdcd;
+  color: #493340;
 }
 
 .footer-socials-subtitle {
@@ -1246,7 +1246,7 @@ p {
   fill: #fff;
 }
 .footer-socials-icon:hover, .footer-socials-icon:focus {
-  fill: #afcdcd;
+  fill: #493340;
 }
 
 .footer-socials {
@@ -1282,6 +1282,9 @@ p {
   }
   .footer-donate-button {
     margin-top: 0;
+  }
+  .footer-socials-subtitle {
+    margin-bottom: 20px;
   }
 }
 .general-main {

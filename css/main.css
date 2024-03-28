@@ -148,6 +148,22 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
+  .dropdown .dropbtn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #493340;
+    transition: border-top-color 0.3s ease; /* добавим плавный переход */
+  }
+  .dropdown:hover .dropbtn::after {
+    border-top-color: #fff; /* Цвет, который будет применяться при наведении на элемент "Про нас" */
+  }
   .dropdown {
     display: inline-block;
     position: relative;
@@ -183,6 +199,7 @@ p {
   .dropdown-content {
     display: none;
     position: absolute;
+    transition: color 0.3s ease;
     background-color: #afcdcd;
     color: #493340;
     min-width: 160px;
@@ -196,6 +213,7 @@ p {
     text-align: left;
   }
   .dropdown-content a:hover {
+    transition: background-color 0.3s ease;
     background-color: #493340;
     color: #fff;
   }
@@ -209,9 +227,25 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
   .dropbtn:hover, .dropbtn:focus {
     color: #fff;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 907px) {
+  .dropdown .dropbtn::after {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 907px) and (max-width: 1199px) {
+  .dropdown .dropbtn::after {
+    top: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dropdown .dropbtn::after {
+    top: 35%;
   }
 }
 .backdrop {
@@ -583,6 +617,7 @@ p {
   padding: 10px;
   border: none;
   background: none;
+  transition: fill 0.3s ease;
   color: #007bff; /* Change to preferred color */
   cursor: pointer;
   fill: #493340;
@@ -635,6 +670,34 @@ p {
 @media screen and (min-width: 1200px) {
   .sisters-gallery {
     justify-content: center;
+  }
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* максимальная ширина 600px */
+  margin: 0 auto; /* центрирование по горизонтали */
+  padding-bottom: 56.25%; /* 16:9 соотношение сторон */
+  margin-top: 30px;
+}
+
+/* Стиль для самого видео */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .video-container iframe {
+    width: 600px;
+    height: 338px; /* соответствует 16:9 соотношению сторон */
+  }
+  .video-container {
+    padding-bottom: 25.25%;
+    margin-top: 35px;
   }
 }
 .nav-link {
@@ -774,6 +837,7 @@ p {
     text-align: center;
     color: #493340;
     font-weight: 700;
+    transition: color 0.3s ease;
   }
   .nav-link:hover, .nav-link:focus {
     color: #fff;
@@ -913,6 +977,7 @@ p {
     color: #493340;
     font-size: 20px;
     font-weight: 700;
+    transition: color 0.3s ease;
   }
   .nav-link:hover, .nav-link:focus {
     color: #fff;
@@ -1147,6 +1212,14 @@ p {
   font-family: inherit;
   font-size: 15px;
   font-weight: 700;
+  transition: color 0.3s ease;
+}
+.footer-contact__adress-link:hover, .footer-contact__adress-link:focus,
+.footer-contact__mail-link:hover,
+.footer-contact__mail-link:focus,
+.footer-contact__tel-link:hover,
+.footer-contact__tel-link:focus {
+  color: #afcdcd;
 }
 
 .footer-socials-subtitle {
@@ -1167,9 +1240,13 @@ p {
 }
 
 .footer-socials-icon {
-  height: 26px;
-  width: 26px;
+  height: 35px;
+  width: 35px;
+  transition: fill 0.3s ease;
   fill: #fff;
+}
+.footer-socials-icon:hover, .footer-socials-icon:focus {
+  fill: #afcdcd;
 }
 
 .footer-socials {
@@ -1177,7 +1254,7 @@ p {
 }
 
 .footer-socials__item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .copyright-text-back {
@@ -1218,6 +1295,11 @@ p {
   min-height: 320px;
 }
 
+.general-hero-img {
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
 .general-main-title {
   display: flex;
   padding-top: 220px;
@@ -1230,17 +1312,34 @@ p {
   color: #fff;
 }
 
-.general-main-text {
+.general-main-text:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.general-main-text-bold {
+  font-weight: 600;
+}
+
+.general-main-addition-text {
+  max-width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  font-family: inherit;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #493340;
 }
 
 .general-main-text-block {
   font-family: inherit;
   font-size: 15px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   color: #493340;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .general-hero-subtitle {
@@ -1400,9 +1499,6 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .general-hero-img {
-    border-radius: 5px;
-  }
   .main-donate-button {
     display: none;
     font-weight: 700;
@@ -1415,6 +1511,9 @@ p {
     padding-top: 350px;
   }
   .general-main-text {
+    font-size: 15px;
+  }
+  .general-main-addition-text {
     font-size: 15px;
   }
   .general-help-item {
@@ -1456,6 +1555,10 @@ p {
   }
   .general-main-title {
     margin-top: auto;
+  }
+  .general-main-addition-text {
+    font-size: 17px;
+    padding-top: 25px;
   }
   .general-main-title {
     padding-top: 200px;
@@ -1646,7 +1749,7 @@ p {
 }
 
 .save-life-help-title {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
@@ -1676,6 +1779,7 @@ p {
   }
   .save-life-hero-title {
     font-size: 30px;
+    margin-top: 30px;
   }
   .save-life-hero-wrapper {
     max-width: 700px;
@@ -1718,6 +1822,9 @@ p {
     text-align: center;
     justify-content: center;
     color: #fff;
+  }
+  .save-life-help-title {
+    margin-top: 60px;
   }
 }
 .sisters-main {
@@ -1793,6 +1900,10 @@ p {
   padding: 20px;
   cursor: pointer;
   margin-bottom: 30px;
+  transition: box-shadow 0.3s ease;
+}
+.sisters-help-card:hover, .sisters-help-card:focus {
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .sisters-help-item-text {
@@ -1843,6 +1954,7 @@ p {
   }
   .sisters-hero-title {
     font-size: 30px;
+    margin-top: 30px;
   }
   .sisters-about-wrapper {
     display: flex;
@@ -2040,6 +2152,7 @@ p {
   }
   .volounters-hero-title {
     font-size: 30px;
+    margin-top: 30px;
   }
 }
 .news-main {
@@ -2139,6 +2252,9 @@ p {
     text-align: center;
     justify-content: center;
     color: #fff;
+  }
+  .news-date-title {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

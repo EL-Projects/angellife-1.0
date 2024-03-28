@@ -1,4 +1,22 @@
 @media screen and (min-width: 768px) {
+  .dropdown .dropbtn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #493340;
+    transition: border-top-color 0.3s ease; /* добавим плавный переход */
+  }
+
+  .dropdown:hover .dropbtn::after {
+    border-top-color: #fff; /* Цвет, который будет применяться при наведении на элемент "Про нас" */
+  }
+
   .dropdown {
     display: inline-block;
     position: relative;
@@ -40,6 +58,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
+    transition: color 0.3s ease;
     background-color: #afcdcd;
     color: #493340;
     min-width: 160px;
@@ -55,6 +74,7 @@
   }
 
   .dropdown-content a:hover {
+    transition: background-color 0.3s ease;
     background-color: #493340;
     color: #fff;
   }
@@ -70,9 +90,26 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: color 0.3s ease;
     &:hover,
     &:focus {
       color: #fff;
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 907px) {
+  .dropdown .dropbtn::after {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 907px) and (max-width: 1199px) {
+  .dropdown .dropbtn::after {
+    top: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dropdown .dropbtn::after {
+    top: 35%;
   }
 }

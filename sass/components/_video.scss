@@ -1,0 +1,28 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* максимальная ширина 600px */
+  margin: 0 auto; /* центрирование по горизонтали */
+  padding-bottom: 56.25%; /* 16:9 соотношение сторон */
+  margin-top: 30px;
+}
+
+/* Стиль для самого видео */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .video-container iframe {
+    width: 600px;
+    height: 338px; /* соответствует 16:9 соотношению сторон */
+  }
+  .video-container {
+    padding-bottom: 25.25%;
+    margin-top: 35px;
+  }
+}

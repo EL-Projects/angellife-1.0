@@ -98,7 +98,7 @@
 }
 
 .save-life-help-title {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
@@ -127,6 +127,7 @@
   }
   .save-life-hero-title {
     font-size: 30px;
+    margin-top: 30px;
   }
   .save-life-hero-wrapper {
     max-width: 700px;
@@ -171,5 +172,9 @@
     text-align: center;
     justify-content: center;
     color: #fff;
+  }
+
+  .save-life-help-title {
+    margin-top: 60px;
   }
 }

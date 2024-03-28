@@ -1733,6 +1733,16 @@ p {
   margin-top: 50px;
 }
 
+.pregnant-image {
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.save-life-motivation-image {
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
 .save-life-save-extra-text {
   font-size: 17px;
   font-weight: 500;
@@ -2057,6 +2067,10 @@ p {
 
 .volounters-img {
   margin-top: 20px;
+}
+
+.volounters-image {
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 

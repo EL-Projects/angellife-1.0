@@ -10,11 +10,11 @@
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid #493340;
-    transition: border-top-color 0.3s ease; /* добавим плавный переход */
+    transition: border-top-color 0.3s ease;
   }
 
   .dropdown:hover .dropbtn::after {
-    border-top-color: #fff; /* Цвет, который будет применяться при наведении на элемент "Про нас" */
+    border-top-color: #fff;
   }
 
   .dropdown {

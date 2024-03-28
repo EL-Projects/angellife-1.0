@@ -159,10 +159,10 @@ p {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid #493340;
-    transition: border-top-color 0.3s ease; /* добавим плавный переход */
+    transition: border-top-color 0.3s ease;
   }
   .dropdown:hover .dropbtn::after {
-    border-top-color: #fff; /* Цвет, который будет применяться при наведении на элемент "Про нас" */
+    border-top-color: #fff;
   }
   .dropdown {
     display: inline-block;
@@ -675,13 +675,12 @@ p {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 600px; /* максимальная ширина 600px */
-  margin: 0 auto; /* центрирование по горизонтали */
-  padding-bottom: 56.25%; /* 16:9 соотношение сторон */
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
   margin-top: 30px;
 }
 
-/* Стиль для самого видео */
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -693,7 +692,7 @@ p {
 @media screen and (min-width: 1200px) {
   .video-container iframe {
     width: 600px;
-    height: 338px; /* соответствует 16:9 соотношению сторон */
+    height: 338px;
   }
   .video-container {
     padding-bottom: 25.25%;

@@ -2247,6 +2247,18 @@ p {
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
+.news-only-text {
+  margin-bottom: 0;
+  padding: 15px;
+  background-color: #afcdcd;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  max-width: 610px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 1200px) {
   .news-img {
     padding-top: 20px;

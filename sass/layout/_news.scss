@@ -35,7 +35,7 @@
 
 @media (min-width: 768px) {
   .news {
-    // flex-direction: row;
+    // flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -131,5 +131,8 @@
   }
   .news-main-title {
     padding-top: 350px;
+  }
+  .news {
+    flex-direction: column;
   }
 }

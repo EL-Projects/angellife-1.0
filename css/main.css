@@ -2300,6 +2300,9 @@ p {
   .news-main-title {
     padding-top: 350px;
   }
+  .news {
+    flex-direction: column;
+  }
 }
 .current {
   color: #fff;

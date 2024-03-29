@@ -2209,7 +2209,6 @@ p {
 
 @media (min-width: 768px) {
   .news {
-    flex-direction: row;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -2260,10 +2259,13 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
+  .news {
+    flex-direction: row;
+  }
   .news-img {
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 60%;
+    width: 70%;
   }
   .news-main {
     min-height: 700px;

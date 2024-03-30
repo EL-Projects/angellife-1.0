@@ -761,7 +761,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.06em;
   background-color: #c74b57;
-  transition-property: background-color;
+  transition-property: background-color, scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
@@ -770,6 +770,7 @@ p {
 .header-call-button:hover, .header-call-button:focus {
   background-color: #e62034;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  scale: 1.05;
 }
 
 .header-call-button-link {
@@ -898,13 +899,14 @@ p {
     justify-content: center;
     letter-spacing: 0.06em;
     background-color: #3d7097;
-    transition-property: background-color;
+    transition-property: background-color, scale;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: #fff;
   }
   .header-donate-button:hover, .header-donate-button:focus {
     background-color: #11b470;
+    scale: 1.05;
   }
   .header-donate-button-link {
     font-family: inherit;
@@ -1033,7 +1035,7 @@ p {
     justify-content: center;
     letter-spacing: 0.06em;
     background-color: #3d7097;
-    transition-property: background-color, box-shadow;
+    transition-property: background-color, box-shadow, scale;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: #ffffff;
@@ -1041,6 +1043,7 @@ p {
   .header-donate-button:hover, .header-donate-button:focus {
     background-color: #1f72cc;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+    scale: 1.05;
   }
   .header-call-button-link {
     font-family: inherit;
@@ -1146,7 +1149,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.06em;
   background-color: #3d7097;
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
@@ -1155,6 +1158,7 @@ p {
 .footer-donate-button:hover, .footer-donate-button:focus {
   background-color: #1f72cc;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  scale: 1.05;
 }
 
 .footer-join-button {
@@ -1172,7 +1176,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.06em;
   background-color: #499573;
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
@@ -1181,6 +1185,7 @@ p {
 .footer-join-button:hover, .footer-join-button:focus {
   background-color: #499555;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  scale: 1.05;
 }
 
 .footer-contacts-subtitle {
@@ -1916,10 +1921,11 @@ p {
   padding: 20px;
   cursor: pointer;
   margin-bottom: 30px;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow, scale 0.3s ease;
 }
 .sisters-help-card:hover, .sisters-help-card:focus {
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  scale: 1.05;
 }
 
 .sisters-help-item-text {
@@ -2038,7 +2044,7 @@ p {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #499573;
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 4;
@@ -2046,6 +2052,7 @@ p {
 .main-join-button:hover, .main-join-button:focus {
   background-color: #499555;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+  scale: 1.05;
 }
 
 .volounters-main-title {

@@ -36,7 +36,7 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   background-color: #3d7097;
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
@@ -46,6 +46,7 @@
   &:focus {
     background-color: #1f72cc;
     box-shadow: 5px 5px 2px rgb(0 0 0 / 25%);
+    scale: 1.05;
   }
 }
 
@@ -64,7 +65,7 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   background-color: #499573;
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
@@ -74,6 +75,7 @@
   &:focus {
     background-color: #499555;
     box-shadow: 5px 5px 2px rgb(0 0 0 / 25%);
+    scale: 1.05;
   }
 }
 

@@ -844,7 +844,7 @@ p {
   }
   .header-call-button {
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     height: 30px;
     width: 150px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -886,7 +886,7 @@ p {
   .header-donate-button {
     margin-bottom: 10px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 20px;
     height: 30px;
     min-width: 150px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -986,7 +986,7 @@ p {
   .header-call-button {
     padding: 10px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     height: 50px;
     min-width: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -995,7 +995,7 @@ p {
     align-items: center;
     justify-content: center;
     background-color: #c74b57;
-    transition-property: background-color, box-shadow;
+    transition-property: background-color, box-shadow, scale;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: #ffffff;
@@ -1004,6 +1004,7 @@ p {
   .header-call-button:hover, .header-call-button:focus {
     background-color: #e62034;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+    scale: 1.05;
   }
   .header-call-button-link {
     font-family: inherit;
@@ -1024,7 +1025,7 @@ p {
     margin-top: 5px;
     margin-bottom: 10px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 20px;
     height: 50px;
     min-width: 250px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

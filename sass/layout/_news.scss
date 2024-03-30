@@ -34,6 +34,7 @@
 
 @media (min-width: 768px) {
   .news {
+    flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -61,7 +62,7 @@
 }
 
 .news-date-title {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .news-text {
@@ -132,4 +133,25 @@
   .news-date-title {
     margin-top: 30px;
   }
+}
+
+.news-image {
+  // width: 200px; /* Исходная ширина контейнера */
+  // height: 200px; /* Исходная высота контейнера */
+  transition: width 0.3s, height 0.3s; /* Плавный переход для изменения размера контейнера */
+}
+
+// .news-image:hover {
+//   width: 300px; /* Увеличиваем ширину контейнера при наведении */
+//   height: 300px; /* Увеличиваем высоту контейнера при наведении */
+// }
+
+.news-image img {
+  width: 100%; /* Растягиваем изображение по ширине контейнера */
+  height: auto; /* Подстраиваем высоту изображения автоматически */
+  transition: transform 0.3s ease; /* Плавный переход для изменения размера изображения */
+}
+
+.news-image:hover img {
+  transform: scale(2); /* Увеличиваем размер изображения при наведении */
 }

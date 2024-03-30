@@ -1342,6 +1342,10 @@ p {
   font-weight: 500;
   color: #493340;
   margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #afcdcd;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .general-hero-subtitle {
@@ -1600,7 +1604,7 @@ p {
   }
   .general-main-text-block {
     font-size: 18px;
-    padding: 10px;
+    padding: 20px;
     margin-top: -250px;
     margin-left: auto;
     margin-right: auto;
@@ -1697,7 +1701,7 @@ p {
   background-color: #afcdcd;
   border-radius: 5px;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
-  padding: 20px;
+  padding: 15px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -1753,7 +1757,7 @@ p {
 }
 
 .save-life-save-extra-text-wrapper {
-  padding: 20px;
+  padding: 15px;
   margin-top: 20px;
   background-color: #afcdcd;
   border-radius: 5px;
@@ -2209,6 +2213,7 @@ p {
 
 @media (min-width: 768px) {
   .news {
+    flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -2235,7 +2240,7 @@ p {
 }
 
 .news-date-title {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .news-text {
@@ -2301,6 +2306,20 @@ p {
     margin-top: 30px;
   }
 }
+.news-image {
+  transition: width 0.3s, height 0.3s; /* Плавный переход для изменения размера контейнера */
+}
+
+.news-image img {
+  width: 100%; /* Растягиваем изображение по ширине контейнера */
+  height: auto; /* Подстраиваем высоту изображения автоматически */
+  transition: transform 0.3s ease; /* Плавный переход для изменения размера изображения */
+}
+
+.news-image:hover img {
+  transform: scale(2); /* Увеличиваем размер изображения при наведении */
+}
+
 .current {
   color: #fff;
 }

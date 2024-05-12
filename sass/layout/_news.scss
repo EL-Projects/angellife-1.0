@@ -83,7 +83,14 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+.news-text-bold {
+  font-weight: 600;
+  font-size: 18px;
+}
+.news-text-bold-italic {
+  font-weight: 600;
+  font-style: italic;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .news-img {
     padding-top: 20px;

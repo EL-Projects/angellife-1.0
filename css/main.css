@@ -2124,7 +2124,7 @@ p {
     justify-content: center;
   }
   .volounters-img {
-    width: 100%;
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -2142,6 +2142,10 @@ p {
   }
   .volounters-text {
     max-width: 600px;
+  }
+  .volounters-img {
+    width: 60%;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2173,7 +2177,7 @@ p {
     max-width: 770px;
   }
   .volounters-img {
-    width: 65%;
+    width: 40%;
   }
   .volounters-text-img-wrapper {
     margin-bottom: 30px;
